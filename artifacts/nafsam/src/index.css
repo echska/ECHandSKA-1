@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 
@@ -16,8 +16,8 @@
   --glass-blur:18px;
   --radius:20px;
   --shadow:0 30px 80px rgba(0,0,0,.55);
-  --serif:'Playfair Display', Georgia, serif;
-  --sans:'Inter', system-ui, sans-serif;
+  --serif:'Amiri', 'Playfair Display', serif;
+  --sans:'Cairo','Inter',sans-serif;
 }
 
 html,body{
@@ -445,6 +445,7 @@ main{flex:1}
   padding:14px 16px;
   border-top:1px solid rgba(232,180,188,.12);
   text-align:center;
+  direction:rtl;
 }
 .album-caption-title{
   display:block;
@@ -461,6 +462,7 @@ main{flex:1}
   opacity:.85;
 }
 .photos-header-sub{
+  direction:rtl;
   font-size:.92rem;
   color:var(--text-dim);
   line-height:1.6;
@@ -1083,7 +1085,7 @@ main{flex:1}
   --v-accent-2:#d9b98c;
   --v-shadow:0 20px 60px rgba(0,0,0,.45);
   --v-blur:blur(16px);
-  font-family:'Inter',sans-serif;
+  font-family:'Cairo',sans-serif;
   color:var(--v-text);
   width:min(1400px,94%);
   margin:auto;
@@ -1094,7 +1096,7 @@ main{flex:1}
 
 .v-hero{padding:40px 0 24px;text-align:center}
 .v-hero-title{
-  font-family:'Playfair Display',serif;
+  font-family:'Amiri',serif;
   font-size:clamp(2rem,5vw,4rem);
   color:#f5eee7;
   margin-bottom:14px;
@@ -1258,7 +1260,7 @@ main{flex:1}
   background:linear-gradient(180deg,rgba(13,13,15,.98),rgba(8,8,10,.98));
   border:1px solid rgba(255,255,255,.08);
   box-shadow:0 40px 100px rgba(0,0,0,.6);
-  font-family:'Inter',sans-serif;
+  font-family:'Cairo',sans-serif;
   color:#f3f3f3;
 }
 .v-modal-top{
