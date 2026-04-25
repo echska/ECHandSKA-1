@@ -1,13 +1,11 @@
 import { useState, useEffect, useCallback } from "react";
 import { type Lang, translations } from "@/i18n/translations";
 
-const VALID_LANGS: Lang[] = ["tr", "en"];
-
 export function useLang() {
   const [lang, setLangState] = useState<Lang>(() => {
     try {
       const stored = localStorage.getItem("site_lang");
-      if (stored === "tr" || stored === "en") return stored;
+      if (stored === "tr" || stored === "fa" || stored === "ar" || stored === "en") return stored;
     } catch {
       /* storage blocked */
     }
@@ -15,7 +13,6 @@ export function useLang() {
   });
 
   const setLang = useCallback((l: Lang) => {
-    if (!VALID_LANGS.includes(l)) return;
     try {
       localStorage.setItem("site_lang", l);
     } catch {

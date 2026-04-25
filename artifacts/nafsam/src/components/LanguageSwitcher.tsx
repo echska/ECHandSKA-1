@@ -2,6 +2,8 @@ import { type Lang } from "@/i18n/translations";
 
 const flags: { lang: Lang; flag: string; title: string }[] = [
   { lang: "tr", flag: "\ud83c\uddf9\ud83c\uddf7", title: "T\u00fcrk\u00e7e" },
+  { lang: "fa", flag: "\ud83c\uddee\ud83c\uddf7", title: "\u0641\u0627\u0631\u0633\u06cc" },
+  { lang: "ar", flag: "\ud83c\uddf8\ud83c\udde6", title: "\u0627\u0644\u0639\u0631\u0628\u064a\u0629" },
   { lang: "en", flag: "\ud83c\uddec\ud83c\udde7", title: "English" },
 ];
 
