@@ -1,7 +1,6 @@
 import { useCallback, useEffect, useState } from "react";
 import { type Translations } from "@/i18n/translations";
 import { videosData } from "@/data/videosData";
-import { recordVideoPlay } from "@/lib/analytics";
 
 interface Props {
   t: Translations;
@@ -36,8 +35,6 @@ export default function Videos({ t }: Props) {
 
   const openModal = useCallback((index: number) => {
     setActiveIndex(index);
-    const item = videosData[index];
-    if (item) recordVideoPlay(item.file);
   }, []);
 
   const closeModal = useCallback(() => setActiveIndex(null), []);
@@ -56,8 +53,6 @@ export default function Videos({ t }: Props) {
 
   useEffect(() => {
     if (activeIndex === null) return;
-    const item = videosData[activeIndex];
-    if (item) recordVideoPlay(item.file);
     const originalOverflow = document.body.style.overflow;
     document.body.style.overflow = "hidden";
     const onKey = (e: KeyboardEvent) => {
