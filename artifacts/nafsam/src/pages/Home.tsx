@@ -1,10 +1,9 @@
 import { useState, useEffect } from "react";
 import { Link } from "wouter";
-import { type Translations } from "@/i18n/translations";
+import { type Translations, type Lang } from "@/i18n/translations";
 import TypedText from "@/components/TypedText";
 import Footer from "@/components/Footer";
 import usePageAudio from "@/hooks/usePageAudio";
-import { useLang } from "@/hooks/useLang";
 import { usePrivateContent, pickLangPages } from "@/hooks/usePrivateContent";
 
 const START = new Date("2025-08-20T04:04:00");
@@ -21,11 +20,11 @@ function elapsed(now: Date) {
 
 interface Props {
   t: Translations;
+  lang: Lang;
 }
 
-export default function Home({ t }: Props) {
+export default function Home({ t, lang }: Props) {
   usePageAudio("song4.mp3");
-  const { lang } = useLang();
   const data = usePrivateContent();
   const p = pickLangPages(data, lang);
 

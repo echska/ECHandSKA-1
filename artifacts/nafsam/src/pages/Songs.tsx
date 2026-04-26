@@ -1,14 +1,13 @@
-import { type Translations } from "@/i18n/translations";
+import { type Translations, type Lang } from "@/i18n/translations";
 import Footer from "@/components/Footer";
-import { useLang } from "@/hooks/useLang";
 import { usePrivateContent, pickLangPages } from "@/hooks/usePrivateContent";
 
 interface Props {
   t: Translations;
+  lang: Lang;
 }
 
-export default function Songs({ t }: Props) {
-  const { lang } = useLang();
+export default function Songs({ t, lang }: Props) {
   const data = usePrivateContent();
   const p = pickLangPages(data, lang);
 

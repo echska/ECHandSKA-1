@@ -1,10 +1,10 @@
 import { useCallback, useEffect, useState } from "react";
-import { type Translations } from "@/i18n/translations";
-import { useLang } from "@/hooks/useLang";
+import { type Translations, type Lang } from "@/i18n/translations";
 import { usePrivateContent, pickLangPages } from "@/hooks/usePrivateContent";
 
 interface Props {
   t: Translations;
+  lang: Lang;
 }
 
 function buildSrc(file: string) {
@@ -27,9 +27,8 @@ function Thumb({ file }: { file: string }) {
   );
 }
 
-export default function Videos({ t }: Props) {
+export default function Videos({ t, lang }: Props) {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
-  const { lang } = useLang();
   const data = usePrivateContent();
   const p = pickLangPages(data, lang);
   const videosData = data?.videos ?? [];
