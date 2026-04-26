@@ -782,5 +782,1164 @@
         "text": "Bu yer intikam için değil, gidecek yer bulamayan bir iz içindir."
       }
     ]
-  }
+  },
+  "pages": {
+    "tr": {
+      "hero_text": "Seninle tesadüfen tanıştım. Çok kısa bir zamanda, yıllarda yaşamadığım bir şeyi yaşadım. Bir otel kapısında rüya başladı, sakin bir sabahta yokluk başladı ve ardından iz her şeye yerleşti.",
+      "quote_1": "Bazı karşılaşmalar zamanda kısadır, ama etkide çok uzundur.",
+      "quote_2": "Ben fotoğrafların kucağı ile senin artık bir hatıra olman düşüncesi arasında kaldım.",
+      "quote_3": "Gece uzar çünkü hafıza uyumaz.",
+      "quote_4": "Bazı aşklar bitmez... sadece sessiz bir acıya dönüşür.",
+      "card_moments_text": "Kapı, sabah ve içsel karmaşanın tanığı olan yol.",
+      "card_photos_text": "Fotoğraflar geçmişi geri getirmez, ama izi canlı tutar.",
+      "card_songs_text": "Bir zamanlar bizim olan şarkılar, şimdi uzun bir gece oldu.",
+      "card_writings_text": "Sessizlik ağır gelince çıkan kelimeler.",
+      "footer_text": "Bu yer intikam için değil, gidecek yer bulamayan bir iz içindir.",
+      "moments_text": "Her hikâye uzun olmak zorunda değildir. Bazen birkaç saat bir kalbin şeklini tamamen değiştirir.",
+      "moment1_time": "20 Aug 2025 • 3:52 AM",
+      "moment1_title": "Gerçek olmadan önce",
+      "moment1_text": "Otele girmeden önce, birkaç dakika sonra hayatımdaki en güzel şeyi göreceğimi bilmiyordum.",
+      "moment1_memory": "O kapı sadece bir giriş değildi; dayanma gücümden daha büyük bir şeyin başlangıcıydı.",
+      "moment2_time": "20 Aug 2025 • 8:04 AM",
+      "moment2_title": "Senin çıktığın ve benim kaldığım sabah",
+      "moment2_text": "Sabah olduğunda her şey yerli yerindeydi... bir tek ben aynı değildim.",
+      "moment2_memory": "Dört saat dört dakika ile dinmeyen bir iz arasında asılı kaldım.",
+      "moment3_time": "İçsel yanış gecesi",
+      "moment3_title": "Tanık olan yol",
+      "moment3_text": "Bu fotoğraf sadece yol değil; taşıyabildiğinden hızlı koşan bir kalbin fotoğrafı.",
+      "moment3_memory": "Sonra anladım ki bazı kalplerin sadece hatıraya değil, kurtuluşa da ihtiyacı vardır.",
+      "moment4_time": "Gece",
+      "moment4_title": "Çiçekler ve Karanlık",
+      "moment4_text": "Gecenin ortasında çiçekler geldi; sanki gökyüzü bize bir parça bahar gönderdi.",
+      "moment4_memory": "Güller bile karanlıkta daha güzel kokar.",
+      "moment5_time": "Birlikte",
+      "moment5_title": "Ağaç Evin Üzerinde",
+      "moment5_text": "Yüksekte, dünyadan uzakta, sadece ikimiz vardık.",
+      "moment5_memory": "Bazı anlar zamanla yarışamaz.",
+      "moment6_time": "Mavi Işık",
+      "moment6_title": "Ellerin Dili",
+      "moment6_text": "Mavi ışığın altında ellerimiz birbirine sarıldı; kelimelere gerek yoktu.",
+      "moment6_memory": "Kalpler ellerde konuşur.",
+      "moment7_time": "Sessizce",
+      "moment7_title": "Bir Bakış Yeterdi",
+      "moment7_text": "Işıkların arasında durduğunda, dünya benim için durdu.",
+      "moment7_memory": "Görünüşü hatırlamak, her şeyi hatırlamaktır.",
+      "moment8_time": "Kumda",
+      "moment8_title": "Kuma Yazılan İsimler",
+      "moment8_text": "Deniz silse de, kuma yazdığımız isimler kalbimde kaldı.",
+      "moment8_memory": "Bazı izler suda değil, ruhta kalır.",
+      "moment9_time": "Son",
+      "moment9_title": "Aynı Kapıdan",
+      "moment9_text": "Başladığımız kapıdan ayrıldık. Çanta omuzda, otel arkasında.",
+      "moment9_memory": "Bazı kapılar hem başlangıç hem sondur.",
+      "moments_footer": "Şafaktaki bir kapıdan, ayrılıktaki sabaha ve geriye kalan ize.",
+      "photos_text": "Şimdi bizim fotoğraflarımızın kucağındayım ve bana sadece sessizlik cevap veriyor.",
+      "photo1_text": "Bu kapıdan içeri girdiğimde henüz bilmiyordum... çıkarken kalbimi içeride bırakacağımı.",
+      "photo2_text": "O sabah gözlerini açtığında dünya hala güzeldi. Kapattığında her şey bitti.",
+      "photo3_text": "Karanlık yolda tek başına yürümek... seni hatırlamaktan daha acı değildi.",
+      "photo4_text": "Aynı kapıdan girdik, aynı kapıdan çıktık. Ama içeride bıraktığımız şeyler asla geri gelmedi.",
+      "photo5_text": "Çantayı koydum, kapıyı kapattım. Seninle geçen her anı o koltuğa bıraktım.",
+      "photo6_text": "Ladera... seni son gördüğüm yer. Işıkları hala yanıyor ama içerisi artık karanlık.",
+      "photo7_text": "Seni çok affettim... ta ki suçlu olan sadece ben olana kadar.",
+      "photo7_sub": "Burada sana her şeyi haklı çıkarıyordum,\nbeni öldüren şeyleri bile.",
+      "photos_footer": "Fotoğraflar geçmişi geri getirmez, ama izini canlı tutar.",
+      "song1_text": "Her açıldığında acı en baştan dönüyor.",
+      "song2_text": "Bu sadece bir şarkı değil; uykusuz bir geceye açılan pencere.",
+      "song3_text": "Geçmiş tek bir şarkıda geri döner.",
+      "song4_text": "Sanki hiç orada olmamıştım... ama izim her yerde.",
+      "songs_footer": "Bazı şarkılar sadece kulakla değil, kalple de dinlenir.",
+      "videos_text": "Kısa sahneler, ama etkileri zamandan daha uzun.",
+      "video1_text": "Bazı anlar videoda biter ama kalpte bitmez.",
+      "video2_text": "Sahne kısa, ama etkisi unutma gücünden daha uzun.",
+      "videos_footer": "Bazı videolar sadece zamanı değil, acıyı da saklar.",
+      "writings_text": "Sessizliğin dayanılmaz olduğu yerde çıkan sözler.",
+      "writings_footer": "Özlüyorum, acı çekiyorum ve yazıyorum... çünkü izden bana kalan tek şey bu.",
+      "photos_header_sub": "Buradaki her fotoğraf bir kalp atışı taşır ve her kalp atışı dinmeyen bir iz taşır."
+    },
+    "fa": {
+      "hero_text": "تو را اتفاقی شناختم. در زمان خیلی کوتاه، چیزی را زندگی کردم که در سال‌ها تجربه نکرده بودم. از درِ یک هتل رویا شروع شد، در صبحی آرام غیبت آغاز شد و بعد از آن اثرش در همه چیز ماند.",
+      "quote_1": "بعضی دیدارها در زمان کوتاه‌اند، اما در اثر بسیار بلند.",
+      "quote_2": "من میان آغوش عکس‌ها و فکرِ این‌که تو به خاطره تبدیل شده‌ای مانده‌ام.",
+      "quote_3": "شب طولانی می‌شود چون حافظه نمی‌خوابد.",
+      "quote_4": "بعضی عشق‌ها تمام نمی‌شوند... فقط به دردی آرام تبدیل می‌شوند.",
+      "card_moments_text": "در، صبح، و راهی که شاهد آشوب درون شد.",
+      "card_photos_text": "عکس‌ها گذشته را برنمی‌گردانند، اما اثر را زنده نگه می‌دارند.",
+      "card_songs_text": "آهنگ‌هایی که روزی مال ما بودند، حالا به شبی طولانی تبدیل شده‌اند.",
+      "card_writings_text": "کلماتی که وقتی سکوت سنگین شد بیرون آمدند.",
+      "footer_text": "این جا برای انتقام نیست؛ برای اثری است که جایی برای رفتن پیدا نکرد.",
+      "moments_text": "همه داستان‌ها لازم نیست طولانی باشند. گاهی چند ساعت شکل یک قلب را کاملاً عوض می‌کند.",
+      "moment1_time": "20 Aug 2025 • 3:52 AM",
+      "moment1_title": "پیش از آن‌که واقعی شوی",
+      "moment1_text": "پیش از ورود به هتل، نمی‌دانستم چند دقیقه بعد زیباترین چیز زندگی‌ام را خواهم دید.",
+      "moment1_memory": "آن در فقط ورودی نبود؛ آغاز چیزی بزرگ‌تر از طاقت من بود.",
+      "moment2_time": "20 Aug 2025 • 8:04 AM",
+      "moment2_title": "صبحی که تو رفتی و من ماندم",
+      "moment2_text": "صبح که شد همه چیز سر جای خود بود... جز من.",
+      "moment2_memory": "میان چهار ساعت و چهار دقیقه و اثری که آرام نمی‌شود معلق ماندم.",
+      "moment3_time": "شبِ سوختن درون",
+      "moment3_title": "راهی که شاهد شد",
+      "moment3_text": "این تصویر فقط از جاده نیست؛ از قلبی است که سریع‌تر از توانش می‌دوید.",
+      "moment3_memory": "بعد فهمیدم بعضی قلب‌ها فقط به خاطره نیاز ندارند، به نجات هم نیاز دارند.",
+      "moment4_time": "شب",
+      "moment4_title": "گل‌ها و تاریکی",
+      "moment4_text": "نیمه‌شب گل‌ها رسیدند؛ انگار آسمان تکه‌ای بهار برایمان فرستاد.",
+      "moment4_memory": "گل‌ها در تاریکی زیباتر می‌بویند.",
+      "moment5_time": "با هم",
+      "moment5_title": "بالای کلبه چوبی",
+      "moment5_text": "در بلندی، دور از دنیا، فقط ما دو نفر بودیم.",
+      "moment5_memory": "بعضی لحظه‌ها با زمان رقابت نمی‌کنند.",
+      "moment6_time": "نور آبی",
+      "moment6_title": "زبان دست‌ها",
+      "moment6_text": "زیر نور آبی دست‌هایمان به هم پیچید؛ کلمات لازم نبود.",
+      "moment6_memory": "قلب‌ها در دست‌ها حرف می‌زنند.",
+      "moment7_time": "بی‌صدا",
+      "moment7_title": "یک نگاه کافی بود",
+      "moment7_text": "وقتی میان نورها ایستادی، دنیا برایم متوقف شد.",
+      "moment7_memory": "یادآوری چهره، یعنی یادآوری همه چیز.",
+      "moment8_time": "روی ماسه",
+      "moment8_title": "اسم‌ها روی شن",
+      "moment8_text": "دریا پاکش کرد، اما اسم‌هایی که روی شن نوشتیم در قلبم ماند.",
+      "moment8_memory": "بعضی ردها در آب نمی‌مانند، در روح می‌مانند.",
+      "moment9_time": "پایان",
+      "moment9_title": "از همان در",
+      "moment9_text": "از همان دری که شروع کردیم جدا شدیم. کوله روی دوش، هتل پشت سر.",
+      "moment9_memory": "بعضی درها هم آغازند هم پایان.",
+      "moments_footer": "از دری در سپیده‌دم، تا صبحِ رفتن، تا اثری که ماند.",
+      "photos_text": "حالا من در آغوش عکس‌های‌مان هستم و فقط سکوت جوابم را می‌دهد.",
+      "photo1_text": "وقتی از این در رد شدم نمی‌دانستم... موقع برگشتن قلبم را تویش جا می‌گذارم.",
+      "photo2_text": "آن صبح وقتی چشمهایش باز شد دنیا هنوز زیبا بود. وقتی بستش همه چیز تمام شد.",
+      "photo3_text": "راه رفتن در تاریکی تنها... دردناک‌تر از یادآوری تو نبود.",
+      "photo4_text": "از همان در وارد شدیم، از همان در بیرون آمدیم. اما آنچه درونش جا گذاشتیم هرگز برنگشت.",
+      "photo5_text": "کیف را گذاشتم، در را بستم. هر لحظه‌ای که با تو گذشت را روی آن صندلی جا گذاشتم.",
+      "photo6_text": "لادرا... آخرین جایی که تو را دیدم. چراغ‌هایش هنوز روشنند اما درونش دیگر تاریک است.",
+      "photo7_text": "بسیار بخشیدمت... تا جایی که تنها گناهکار در حق قلبم، من شدم.",
+      "photo7_sub": "اینجا برای همه چیز توجیه می‌آوردم،\\nحتی چیزهایی که مرا می‌کشتند.",
+      "photos_footer": "عکس‌ها گذشته را برنمی‌گردانند، اما اثرش را زنده نگه می‌دارند.",
+      "song1_text": "هر بار پخش می‌شود، درد از اول برمی‌گردد.",
+      "song2_text": "این فقط آهنگ نیست؛ پنجره‌ای است به شبی بی‌خواب.",
+      "song3_text": "گذشته در یک آهنگ برمی‌گردد.",
+      "song4_text": "انگار هیچ‌وقت آنجا نبودم... اما ردم همه جا هست.",
+      "songs_footer": "بعضی آهنگ‌ها فقط با گوش شنیده نمی‌شوند، با دل هم شنیده می‌شوند.",
+      "videos_text": "صحنه‌های کوتاه، اما اثرشان از زمان طولانی‌تر است.",
+      "video1_text": "بعضی لحظه‌ها در ویدیو تمام می‌شوند اما در دل نه.",
+      "video2_text": "صحنه کوتاه است، اما اثرش از توان فراموشی طولانی‌تر.",
+      "videos_footer": "بعضی ویدیوها فقط زمان را نگه نمی‌دارند، درد را هم نگه می‌دارند.",
+      "writings_text": "کلماتی که وقتی سکوت غیرقابل‌تحمل شد بیرون آمدند.",
+      "writings_footer": "دلتنگم، درد می‌کشم و می‌نویسم... چون این تنها چیزی است که از آن اثر برایم مانده.",
+      "photos_header_sub": "هر عکسی اینجا یک ضربان دارد و هر ضربان اثری دارد که آرام نمی‌گیرد."
+    },
+    "ar": {
+      "hero_text": "تعرّفت عليكِ صدفة، وفي وقت قصير جدًا عشت شيئًا لم أعشه في سنوات. من باب فندق بدأ الحلم، ومن صباح هادئ بدأ الغياب، ومن بعدها بقي الأثر يسكن كل شيء.",
+      "quote_1": "بعض اللقاءات قصيرة في الوقت، لكنها طويلة في الأثر.",
+      "quote_2": "أنا بين حضن الصور وفكرة أنكِ صرتِ ذكرى.",
+      "quote_3": "الليل يطول لأن الذاكرة لا تنام.",
+      "quote_4": "بعض الحب لا ينتهي... بل يتحول إلى وجع هادئ.",
+      "card_moments_text": "الباب، الصباح، والطريق الذي بقي شاهدًا.",
+      "card_photos_text": "صور لا تعيد ما مضى، لكنها تبقي الأثر حيًا.",
+      "card_songs_text": "الأغاني التي كانت لنا، وصارت اليوم ليلًا طويلًا.",
+      "card_writings_text": "الكلمات التي خرجت لأن الصمت صار أثقل من الاحتمال.",
+      "footer_text": "هذا المكان ليس للانتقام، هذا المكان لأثرٍ لم يجد أين يذهب.",
+      "moments_text": "ليست كل القصص طويلة. أحيانًا تكفي ساعات قليلة حتى تغيّر شكل القلب بالكامل.",
+      "moment1_time": "20 Aug 2025 • 3:52 AM",
+      "moment1_title": "قبل أن تصيري واقعًا",
+      "moment1_text": "قبل أن أدخل الفندق، ما كنت أتخيّل أنني بعد دقائق سأرى أجمل شيء مرّ في حياتي.",
+      "moment1_memory": "ذلك الباب لم يكن مجرد مدخل، بل بداية شيء أكبر من احتمالي.",
+      "moment2_time": "20 Aug 2025 • 8:04 AM",
+      "moment2_title": "الصباح الذي خرجتِ فيه وبقيتُ أنا",
+      "moment2_text": "في الصباح، كان كل شيء كما هو... إلا أنا.",
+      "moment2_memory": "بقيت عالقًا بين أربع ساعات وأربع دقائق وبين أثر لا يعرف كيف يهدأ.",
+      "moment3_time": "ليلة الاحتراق الداخلي",
+      "moment3_title": "الطريق الذي صار شاهدًا",
+      "moment3_text": "هذه الصورة ليست عن الطريق فقط، بل عن قلبٍ كان يركض أسرع من احتماله.",
+      "moment3_memory": "ومن بعدها فهمت أن بعض القلوب لا تحتاج فقط إلى ذكرى، بل تحتاج أيضًا إلى نجاة.",
+      "moment4_time": "الليل",
+      "moment4_title": "ورود وعتمة",
+      "moment4_text": "في منتصف الليل جاءت الورود، كأن السماء أرسلت لنا قطعة ربيع.",
+      "moment4_memory": "الورود في العتمة أجمل رائحة.",
+      "moment5_time": "معًا",
+      "moment5_title": "فوق الكوخ الخشبي",
+      "moment5_text": "في الأعلى، بعيدًا عن الدنيا، كنا فقط نحن الاثنين.",
+      "moment5_memory": "بعض اللحظات لا تنافس الزمن.",
+      "moment6_time": "ضوء أزرق",
+      "moment6_title": "لغة الأيدي",
+      "moment6_text": "تحت الضوء الأزرق تشابكت أيدينا، لم تكن الكلمات ضرورية.",
+      "moment6_memory": "القلوب تتكلم في الأيدي.",
+      "moment7_time": "بصمت",
+      "moment7_title": "نظرة واحدة كفت",
+      "moment7_text": "عندما وقفتِ بين الأضواء، توقف العالم عندي.",
+      "moment7_memory": "تذكّر الوجه يعني تذكّر كل شيء.",
+      "moment8_time": "على الرمل",
+      "moment8_title": "أسماء على الرمل",
+      "moment8_text": "محاها البحر، لكن الأسماء التي كتبناها بقيت في قلبي.",
+      "moment8_memory": "بعض الآثار لا تبقى في الماء، تبقى في الروح.",
+      "moment9_time": "النهاية",
+      "moment9_title": "من نفس الباب",
+      "moment9_text": "من نفس الباب الذي بدأنا منه افترقنا. الحقيبة على الكتف، الفندق خلفنا.",
+      "moment9_memory": "بعض الأبواب بداية ونهاية معًا.",
+      "moments_footer": "من بابٍ عند الفجر، إلى صباحٍ عند الرحيل، إلى أثرٍ بقي بعد كل شيء.",
+      "photos_text": "أنا الآن في حضن صورنا، والصور وحدها هي التي بقيت تردّ عليّ بالصمت.",
+      "photo1_text": "عندما دخلت من هذا الباب لم أكن أعرف... أنني سأترك قلبي خلفي عند الخروج.",
+      "photo2_text": "ذلك الصباح عندما فتحت عينيها كان العالم لا يزال جميلًا. عندما أغلقتها انتهى كل شيء.",
+      "photo3_text": "المشي وحيدًا في الظلام... لم يكن أشد ألمًا من تذكّرك.",
+      "photo4_text": "دخلنا من نفس الباب، خرجنا من نفس الباب. لكن ما تركناه بالداخل لم يعد أبدًا.",
+      "photo5_text": "وضعت الحقيبة، أغلقت الباب. كل لحظة عشتها معك تركتها على ذلك المقعد.",
+      "photo6_text": "لاديرا... آخر مكان رأيتك فيه. أضواؤه لا تزال مضيئة لكن داخله أصبح مظلمًا.",
+      "photo7_text": "سامحتكِ كثيرًا، حتى صرتُ أنا المذنب الوحيد في حق قلبي.",
+      "photo7_sub": "هنا كنتُ أبرر لكِ كل شيء،\\nحتى الأشياء التي كانت تقتلني.",
+      "photos_footer": "الصور لا تعيد ما مضى، لكنها تبقي أثره حيًا.",
+      "song1_text": "كلما اشتغلت، عاد الوجع من أوله.",
+      "song2_text": "هذه ليست أغنية فقط، هذه نافذة تُفتح على ليلٍ لم يكتمل نومه.",
+      "song3_text": "الماضي يعود في أغنية واحدة.",
+      "song4_text": "كأنني لم أكن هناك أبدًا... لكن أثري في كل مكان.",
+      "songs_footer": "بعض الأغاني لا تُسمع بالأذن فقط، بل بالقلب أيضًا.",
+      "videos_text": "لقطات قصيرة، لكن أثرها أطول من الوقت نفسه.",
+      "video1_text": "بعض اللحظات تنتهي داخل الفيديو، لكنها لا تنتهي داخل القلب.",
+      "video2_text": "اللقطة قصيرة، لكن بعدها يظلّ أطول من القدرة على النسيان.",
+      "videos_footer": "بعض الفيديوهات لا تحفظ الوقت فقط، بل تحفظ الوجع أيضًا.",
+      "writings_text": "الكلام الذي خرج لأن الصمت صار أثقل من الاحتمال.",
+      "writings_footer": "أشتاق، أتألم، وأكتب... لأن هذا كل ما بقي لي من الأثر.",
+      "photos_header_sub": "كل صورة هنا تحمل نبضة، وكل نبضة تحمل أثرًا لا يهدأ."
+    },
+    "en": {
+      "hero_text": "I met you by chance, and in a very short time I lived something I had never lived in years. At a hotel door the dream began, in a quiet morning the absence began, and after that the trace stayed in everything.",
+      "quote_1": "Some meetings are short in time, but long in impact.",
+      "quote_2": "I am between the embrace of photos and the thought that you became a memory.",
+      "quote_3": "The night grows longer because memory does not sleep.",
+      "quote_4": "Some love does not end... it only turns into a quiet pain.",
+      "card_moments_text": "The door, the morning, and the road that witnessed the inner chaos.",
+      "card_photos_text": "Photos do not bring back the past, but they keep the trace alive.",
+      "card_songs_text": "The songs that were once ours became a long night.",
+      "card_writings_text": "Words that came out when silence became too heavy.",
+      "footer_text": "This place is not for revenge. It is for a trace that found nowhere to go.",
+      "moments_text": "Not every story needs to be long. Sometimes a few hours are enough to change the shape of a heart completely.",
+      "moment1_time": "20 Aug 2025 • 3:52 AM",
+      "moment1_title": "Before You Became Real",
+      "moment1_text": "Before I entered the hotel, I did not know that in a few minutes I would see the most beautiful thing in my life.",
+      "moment1_memory": "That door was not just an entrance; it was the beginning of something bigger than my endurance.",
+      "moment2_time": "20 Aug 2025 • 8:04 AM",
+      "moment2_title": "The Morning You Left and I Stayed",
+      "moment2_text": "In the morning, everything was the same... except me.",
+      "moment2_memory": "I remained suspended between four hours and four minutes and a trace that would not calm down.",
+      "moment3_time": "Night of Inner Burning",
+      "moment3_title": "The Road That Became a Witness",
+      "moment3_text": "This image is not only about the road; it is about a heart running faster than it could bear.",
+      "moment3_memory": "Then I understood that some hearts need not only memory, but also survival.",
+      "moment4_time": "Night",
+      "moment4_title": "Flowers and Darkness",
+      "moment4_text": "In the middle of the night the flowers came; as if the sky sent us a piece of spring.",
+      "moment4_memory": "Even roses smell sweeter in the dark.",
+      "moment5_time": "Together",
+      "moment5_title": "Above the Tree House",
+      "moment5_text": "High up, far from the world, it was just the two of us.",
+      "moment5_memory": "Some moments do not race against time.",
+      "moment6_time": "Blue Light",
+      "moment6_title": "The Language of Hands",
+      "moment6_text": "Under the blue light our hands held each other; words were not needed.",
+      "moment6_memory": "Hearts speak through hands.",
+      "moment7_time": "Silently",
+      "moment7_title": "One Look Was Enough",
+      "moment7_text": "When you stood among the lights, the world stopped for me.",
+      "moment7_memory": "Remembering your face is remembering everything.",
+      "moment8_time": "On the Sand",
+      "moment8_title": "Names Written in Sand",
+      "moment8_text": "Even though the sea erased them, the names we wrote in the sand stayed in my heart.",
+      "moment8_memory": "Some traces remain not in water, but in the soul.",
+      "moment9_time": "The End",
+      "moment9_title": "From the Same Door",
+      "moment9_text": "We left through the door we came from. Bag on shoulder, the hotel behind us.",
+      "moment9_memory": "Some doors are both a beginning and an end.",
+      "moments_footer": "From a door at dawn, to a morning of leaving, to a trace that remained.",
+      "photos_text": "Now I am in the embrace of our photos, and only silence answers me.",
+      "photo1_text": "When I walked through this door, I didn't know... I would leave my heart inside when I left.",
+      "photo2_text": "That morning when she opened her eyes, the world was still beautiful. When she closed them, everything ended.",
+      "photo3_text": "Walking alone in the dark... was not more painful than remembering you.",
+      "photo4_text": "We entered from the same door, we left from the same door. But what we left inside never came back.",
+      "photo5_text": "I put the bag down, closed the door. Every moment I lived with you, I left on that seat.",
+      "photo6_text": "Ladera... the last place I saw you. Its lights are still on, but inside it is dark now.",
+      "photo7_text": "I forgave you so much... until I became the only one guilty against my own heart.",
+      "photo7_sub": "Here I was justifying everything for you,\neven the things that were killing me.",
+      "photos_footer": "Photos do not bring back what has passed, but they keep its trace alive.",
+      "song1_text": "Whenever it plays, the pain returns from the beginning.",
+      "song2_text": "This is not just a song; it is a window opening onto a sleepless night.",
+      "song3_text": "The past returns in a single song.",
+      "song4_text": "As if I was never there... but my trace is everywhere.",
+      "songs_footer": "Some songs are not heard only with the ear, but with the heart too.",
+      "videos_text": "Short scenes, but their impact lasts longer than time itself.",
+      "video1_text": "Some moments end in the video, but they do not end in the heart.",
+      "video2_text": "The scene is short, but its effect lasts longer than the ability to forget.",
+      "videos_footer": "Some videos preserve not only time, but pain too.",
+      "writings_text": "Words that came out because silence became heavier than endurance.",
+      "writings_footer": "I miss, I ache, and I write... because this is all that remains of the trace.",
+      "photos_header_sub": "Every photo here carries a heartbeat, and every heartbeat carries a trace that never fades."
+    }
+  },
+  "videos": [
+    {
+      "title": "ذكرى 1",
+      "file": "1A574DE2-D943-47FE-AC71-6C9D3EACCF2F.MP4",
+      "quote": "Asıl acı, senin gitmiş olman değil... kalbimin hâlâ sana dönmek istemesi.",
+      "caption": "صمتٌ يسكنني"
+    },
+    {
+      "title": "ذكرى 2",
+      "file": "1b9037df-0af4-4191-968b-d5f608bf09f7.MP4",
+      "quote": "Seni öyle özlüyorum ki, içimde eksik kalan şey artık sadece bir insan değil, bütün bir hayat.",
+      "caption": "فراقٌ بلا صوت"
+    },
+    {
+      "title": "ذكرى 3",
+      "file": "1c07b159-0ccd-458e-bc3c-d867700e96ac.MP4",
+      "quote": "Görüntün geçiyor, ama ardından içimde yıllardır sönmeyen bir yangın uyanıyor.",
+      "caption": "ظلٌّ من حنين"
+    },
+    {
+      "title": "ذكرى 4",
+      "file": "1e35b1c3-ea5c-45ed-aec5-6af62da58747.MP4",
+      "quote": "Kalbi en çok yakan şey, bir zamanlar hayat olan kişinin şimdi sadece hatıra kalması.",
+      "caption": "جرحٌ لا يندمل"
+    },
+    {
+      "title": "ذكرى 5",
+      "file": "1fd19073-1e31-43e9-9cb9-22feed171934.MP4",
+      "quote": "Senden kalan her kare, yeniden açılan bir yara gibi içime dokunuyor.",
+      "caption": "دمعةٌ في العتمة"
+    },
+    {
+      "title": "ذكرى 6",
+      "file": "2b184ad2-ef48-45e2-a452-cb6cbc036204.MP4",
+      "quote": "Ayrılığın zamanla hafifleyeceğini sandım; meğer insan bazen ömrü boyunca aynı yerden kırılırmış.",
+      "caption": "وداعٌ لم يكتمل"
+    },
+    {
+      "title": "ذكرى 7",
+      "file": "2fc3635e-b99f-4f03-87b3-4c54f61e9440.MP4",
+      "quote": "Senin yokluğun bir kişi eksikliği değil... huzurun, sesin ve ruhumun eksik kalması.",
+      "caption": "خيالُكِ يؤلمني"
+    },
+    {
+      "title": "ذكرى 8",
+      "file": "3bf36c04-2f06-4d91-8da3-b6e9d048f240.MP4",
+      "quote": "Ben sadece özlemiyorum... seni düşündükçe içim sessizce yanıyor.",
+      "caption": "صدى رحيلكِ"
+    },
+    {
+      "title": "ذكرى 9",
+      "file": "8de3d6b2-3ab9-48fa-966f-db7d8a5eda7f.MP4",
+      "quote": "Bazı acılar söze dönüşmez; sadece gözlerde ağır bir gölge gibi kalır.",
+      "caption": "أنينُ القلب"
+    },
+    {
+      "title": "ذكرى 10",
+      "file": "9b04f38f-6c4b-4e2c-bf63-5cc416557815.MP4",
+      "quote": "Sen gittin... ve senden sonra hiçbir şey tam kalmadı.",
+      "caption": "ركامُ الأمس"
+    },
+    {
+      "title": "ذكرى 11",
+      "file": "09b29ea8-b325-47ea-98a2-b8034f45dcda.mov",
+      "quote": "Bu bir video değil; ayrılıktan sonra bile atmayı sürdüren yaralı bir kalp.",
+      "caption": "حنينٌ لا ينطفئ"
+    },
+    {
+      "title": "ذكرى 12",
+      "file": "9cb4dad8-3d00-4727-82b6-5217e94482fe.MP4",
+      "quote": "Sana duyduğum özlem, her gün yeniden verilen sessiz bir ceza gibi.",
+      "caption": "غيابُكِ يكبر"
+    },
+    {
+      "title": "ذكرى 13",
+      "file": "9CF930F4-B4A4-49ED-A238-E104AEBA5E02.MP4",
+      "quote": "Aşkın insanı ısıtacağını sanmıştım; meğer bazen insanı kendi içinde üşütürmüş.",
+      "caption": "خواءٌ يعصرني"
+    },
+    {
+      "title": "ذكرى 14",
+      "file": "28FC2164-02C0-4505-8C63-AB397DB1C907.MP4",
+      "quote": "Burada seni gördükçe, bir zamanlar bana ne kadar ait olduğunu ve şimdi ne kadar uzak olduğunu hatırlıyorum.",
+      "caption": "ذكرى تموت ببطء"
+    },
+    {
+      "title": "ذكرى 15",
+      "file": "41d39eba-0670-4c9d-ad8f-4a9f00e13aca.MP4",
+      "quote": "Bu görüntülerin içinde seni değil, senden sonra kaybettiğim kendimi arıyorum.",
+      "caption": "صمتٌ مرتجف"
+    },
+    {
+      "title": "ذكرى 16",
+      "file": "65fcdb0f-853e-415c-99b9-72fa1c4f3f66.MP4",
+      "quote": "Sen sıradan bir anı değilsin; her gün yeniden canımı yakan bir eksikliksin.",
+      "caption": "شوقٌ يقتلني"
+    },
+    {
+      "title": "ذكرى 17",
+      "file": "3e68ac36-b0ab-42b4-8423-e3ce103de4f7.MP4",
+      "quote": "Bazı insanlar gider, bazıları ise giderken insanın içindeki hayatı da beraberinde götürür.",
+      "caption": "أثرٌ لا يُمحى"
+    },
+    {
+      "title": "ذكرى 18",
+      "file": "4bae9f44-202c-4815-ad48-8c656ade9a84.MP4",
+      "quote": "Seni bir düş gibi yaşadım, sonra o düşten geriye uykusuz bir acı kaldı.",
+      "caption": "وجهُكِ في الذاكرة"
+    },
+    {
+      "title": "ذكرى 19",
+      "file": "4bf679c8-622e-412c-a598-eff8c425803d.MP4",
+      "quote": "En zor olan gidişin değil... senden sonra her şeyde seni bulmam.",
+      "caption": "وحدةٌ ثقيلة"
+    },
+    {
+      "title": "ذكرى 20",
+      "file": "4CF0DDAD-EF9A-4340-A9D7-18E00D10152A.MP4",
+      "quote": "Her şey bir gün diner derler; ama bazı özlemlerin sabahı olmaz.",
+      "caption": "ندمٌ متأخر"
+    },
+    {
+      "title": "ذكرى 21",
+      "file": "6AZbOLLaBsiCxHA.MP4",
+      "quote": "Bu iz silinmiyor; seni unutmaya çalıştıkça daha da derine işliyor.",
+      "caption": "حسرةٌ على ما مضى"
+    },
+    {
+      "title": "ذكرى 22",
+      "file": "7be5e5b0-3c90-4041-a7bd-899439445d30.MP4",
+      "quote": "Seni ilk kez seviyor gibi özlüyor, son kez yaşıyor gibi kırılıyorum.",
+      "caption": "سكونٌ موجع"
+    },
+    {
+      "title": "ذكرى 23",
+      "file": "7D901900-AA88-4F56-86B5-E4C1D05E1B76.MP4",
+      "quote": "Kalbim senden sonra bir ev değil, yankıyla dolu boş bir oda oldu.",
+      "caption": "غصةٌ في الحلق"
+    },
+    {
+      "title": "ذكرى 24",
+      "file": "8bc66ab8-7839-4ab7-abdf-fdcaa7e5c8c5.MP4",
+      "quote": "Her yangın görünmez; bazıları insanın içinde sessizce kül eder.",
+      "caption": "لهفةٌ بلا جواب"
+    },
+    {
+      "title": "ذكرى 25",
+      "file": "b62f16b2-7633-4042-a226-477830055c7c.MP4",
+      "quote": "Bazen tek bir video, yıllardır susturmaya çalıştığım bütün acıyı geri getiriyor.",
+      "caption": "حزنٌ ناعم"
+    },
+    {
+      "title": "ذكرى 26",
+      "file": "B75B6BA1-9E7E-4C8C-AEAD-FC7DAE515B39.MP4",
+      "quote": "Seni gururuma rağmen özlüyor, kırgınlığıma rağmen seviyorum.",
+      "caption": "كلماتٌ معلقة"
+    },
+    {
+      "title": "ذكرى 27",
+      "file": "b8347c5c-7f8d-4940-9f54-b7da44806a96.MP4",
+      "quote": "Her yokluk unutulmaz; bazıları tenin altına yerleşir.",
+      "caption": "ليلٌ بلا نهاية"
+    },
+    {
+      "title": "ذكرى 28",
+      "file": "b2422243-ab7f-4c3a-a0be-349b3ccf9a46.MP4",
+      "quote": "Beni bıraktığın yerdeyim; sadece yüzüm değil, ruhum da çok yoruldu.",
+      "caption": "بقايا اشتياق"
+    },
+    {
+      "title": "ذكرى 29",
+      "file": "C46592A5-8186-48FA-B374-602894DE50E2.mov",
+      "quote": "Sen, geçti sandığım anda içimde daha da büyüyen düğümsün.",
+      "caption": "ضياعٌ بطيء"
+    },
+    {
+      "title": "ذكرى 30",
+      "file": "cce65a00-b9d1-4048-817d-362cad247189.MP4",
+      "quote": "Burada seni görünce, içimde ayakta tuttuğum son şey de kırıldı.",
+      "caption": "غيمةٌ تبكي"
+    },
+    {
+      "title": "ذكرى 31",
+      "file": "cde3f557-93f7-4f7e-a0af-2a522c870a20.MP4",
+      "quote": "Görüntüler yalan söylüyor; çünkü sen burada hâlâ canlı gibisin.",
+      "caption": "صفحةٌ مطوية"
+    },
+    {
+      "title": "ذكرى 32",
+      "file": "d4958a60-d6b7-4b56-85dc-5a0697811466.MP4",
+      "quote": "Zaman geçti, mevsimler değişti, ama sen içimde aynı yerden acıtıyorsun.",
+      "caption": "نسيانٌ مستحيل"
+    },
+    {
+      "title": "ذكرى 33",
+      "file": "d7445fe8-858b-46a4-b524-bb8163188cea.MP4",
+      "quote": "Tam hafifledim sanırken, adın içimde eski yangınları uyandırıyor.",
+      "caption": "قلبٌ منهك"
+    },
+    {
+      "title": "ذكرى 34",
+      "file": "e4a8c150-a88a-4b18-b984-8874ffcf5c32.MP4",
+      "quote": "Sen unuttuğum biri değil, benden kopup giden bir parçamsın.",
+      "caption": "ابتسامةٌ مخنوقة"
+    },
+    {
+      "title": "ذكرى 35",
+      "file": "E6CE3DE1-A512-4B42-A879-0CC5CDE354E9.MP4",
+      "quote": "Bu özlem sıradan değil; ruhun, kendinden kopan yarısını araması gibi.",
+      "caption": "صدىً في الفراغ"
+    },
+    {
+      "title": "ذكرى 36",
+      "file": "e664bd58-2766-44aa-bd24-266ae09df4f3.MP4",
+      "quote": "En çok da bir zamanlar huzurum olan şeyin şimdi korkum olmasına yanıyorum.",
+      "caption": "خطىً تائهة"
+    },
+    {
+      "title": "ذكرى 37",
+      "file": "e2904503-fade-437b-b715-a8451cd28a86.MP4",
+      "quote": "Seni öyle özlüyorum ki, senden başka her şey içimde yabancı kalıyor.",
+      "caption": "ساعةٌ متوقفة"
+    },
+    {
+      "title": "ذكرى 38",
+      "file": "e3096516-77ed-4030-a2a3-c5c594b65c39.MP4",
+      "quote": "Sesinin, yüzünün ve gölgenin kırıntılarıyla ayakta durmaya çalışıyorum.",
+      "caption": "عمرٌ يضيع"
+    },
+    {
+      "title": "ذكرى 39",
+      "file": "eae7013f-da76-4bb0-93eb-d74954852fe5.MP4",
+      "quote": "İçimde sana dair kalan sevgi, artık taşıyamadığım kadar ağır.",
+      "caption": "وقتٌ ضائع"
+    },
+    {
+      "title": "ذكرى 40",
+      "file": "EB2400B6-6B3E-4F51-9426-391ED7DB5FD3.MP4",
+      "quote": "Seni, memleketini kaybetmiş birinin gökyüzüne bakışı gibi özlüyorum.",
+      "caption": "حكايةٌ مبتورة"
+    },
+    {
+      "title": "ذكرى 41",
+      "file": "F5E1A029-863F-4F90-9CB9-9C895B813C0A.MP4",
+      "quote": "Sen sadece giden biri değildin; içimde çöken bütün bir ömürdün.",
+      "caption": "أحلامٌ مكسورة"
+    },
+    {
+      "title": "ذكرى 42",
+      "file": "f32f992e-cc2d-4d3f-85a2-04452f60b764.MP4",
+      "quote": "Senden kalan her şey, küllenmiş sandığım yerleri yeniden yakıyor.",
+      "caption": "وجعٌ صامت"
+    },
+    {
+      "title": "ذكرى 43",
+      "file": "F6816003-EB61-4BF4-8F30-5159F8AB0BFB.mov",
+      "quote": "Seni özlüyorum; ama özlemin kimseyi geri getirmediğini de biliyorum.",
+      "caption": "روحٌ منكسرة"
+    },
+    {
+      "title": "ذكرى 44",
+      "file": "f8774550-5c4f-435f-a77d-6b49ab35c75c.MP4",
+      "quote": "Bazı insanlar giderken, bir mekânın bütün sıcaklığını da yanlarında götürür.",
+      "caption": "مساءٌ موحش"
+    },
+    {
+      "title": "ذكرى 45",
+      "file": "fa14d6a3-ada3-4a78-b4a6-ecda2a3115bc.MP4",
+      "quote": "Bu sadece hasret değil; derinlerde sessizce büyüyen bir iç yangını.",
+      "caption": "لقاءٌ بعيد"
+    },
+    {
+      "title": "ذكرى 46",
+      "file": "677430fb-9bab-4308-91fd-7861c6d55eef.MP4",
+      "quote": "Senden sonra sessizlik bile bir çığlık kadar ağır geliyor.",
+      "caption": "عناقٌ ضائع"
+    },
+    {
+      "title": "ذكرى 47",
+      "file": "2172417b-da80-486d-b654-368b3ff540ce.MP4",
+      "quote": "Hatıran gelip geçmiyor; göğsümde ağır bir taş gibi kalıyor.",
+      "caption": "كلمةٌ لم تُقَل"
+    },
+    {
+      "title": "ذكرى 48",
+      "file": "a9efbc4c-6df3-47f0-944e-6d2e7d213c33.MP4",
+      "quote": "Her şeyden yoruldum, ama seni sevmekten değil.",
+      "caption": "غصنٌ مكسور"
+    },
+    {
+      "title": "ذكرى 49",
+      "file": "A075A5D8-1A08-4F07-B898-DF9C6C12F2F9.mov",
+      "quote": "Özlemi senden öğrendim; onun nasıl insanı içten içe erittiğini de.",
+      "caption": "ضوءٌ خافت"
+    },
+    {
+      "title": "ذكرى 50",
+      "file": "A98B33EC-C024-4D46-A6F6-B75EC28CFAF0.MP4",
+      "quote": "Kalp gerçekten sevdiğini unutmuyor; sadece sessizce taşımayı öğreniyor.",
+      "caption": "فجرٌ بارد"
+    },
+    {
+      "title": "ذكرى 51",
+      "file": "AECA3171-1D67-4F39-8E35-F250E4ECB13A.MP4",
+      "quote": "Seni acıyla seviyor, kırılarak özlüyor, susarak taşıyorum.",
+      "caption": "صباحٌ ثقيل"
+    },
+    {
+      "title": "ذكرى 52",
+      "file": "b0ddd0e6-a1b6-4a31-8903-513faa9a3372.MP4",
+      "quote": "Tam sakinleştim derken, gölgen içime yeniden düşüyor.",
+      "caption": "شفقٌ حزين"
+    },
+    {
+      "title": "ذكرى 53",
+      "file": "b27ce83f-d548-4172-a450-c431ac2c1e12.MP4",
+      "quote": "Kalbim, adının çıktığı gün kapıları kapanmış eski bir eve dönüştü.",
+      "caption": "ليلٌ طويل"
+    },
+    {
+      "title": "ذكرى 54",
+      "file": "6678cf4a-515f-4ee1-b7d0-01110fc66da1.MP4",
+      "quote": "Her acı gözyaşı değildir; bazıları insanın içine çöken uzun bir sessizliktir.",
+      "caption": "نجمةٌ تنطفئ"
+    },
+    {
+      "title": "ذكرى 55",
+      "file": "7237ac3a-e666-4b41-9cc9-05fb62ee2287.MP4",
+      "quote": "İstemesem de sana dönüyorum; sanki ruhum yolunu senden başka bilmiyor.",
+      "caption": "رصيفٌ موحش"
+    },
+    {
+      "title": "ذكرى 56",
+      "file": "8144A52F-CDF4-4188-979C-641E2C00201C.MP4",
+      "quote": "Senden sonra öğrendim; kalp yaşar, ama bir daha eskisi gibi olmaz.",
+      "caption": "درسٌ مؤلم"
+    },
+    {
+      "title": "ذكرى 57",
+      "file": "27944cdacdee4d22b8c15be2049a4f98.MOV",
+      "quote": "Bazı anlar ölmez; hafızada ince bir bıçak gibi kalır.",
+      "caption": "سؤالٌ بلا إجابة"
+    },
+    {
+      "title": "ذكرى 58",
+      "file": "51608ecac4e14f94bc18262bd82ef424.MOV",
+      "quote": "Senden sonra her şey sıradanlaştı; sadece acım aynı kaldı.",
+      "caption": "غيابٌ يقتل"
+    },
+    {
+      "title": "ذكرى 59",
+      "file": "072559D6-8235-4D0F-99F4-39E6EAF7465B.mov",
+      "quote": "Kendimi güçlü sanıyordum; meğer en derin yerim senden ibaretmiş.",
+      "caption": "صمتُكِ يؤلمني"
+    },
+    {
+      "title": "ذكرى 60",
+      "file": "84029de5-73ee-402c-8c84-c2066e6e8204.MP4",
+      "quote": "Özlemin asıl yangını gözde değil, kalbin en dibinde yanıyor.",
+      "caption": "أنفاسٌ ثقيلة"
+    },
+    {
+      "title": "ذكرى 61",
+      "file": "458887e6-af77-4a50-8b72-3d5735996c4d.MP4",
+      "quote": "Bir zamanlar hayatım olan şeyin şimdi sadece hatıra oluşu içimi parçalıyor.",
+      "caption": "خطوةٌ متعبة"
+    },
+    {
+      "title": "ذكرى 62",
+      "file": "67A2D365-0155-49E2-AF20-5FE7778B44A0.mov",
+      "quote": "Hatırlıyorum, yanıyorum, susuyorum... ve hiçbir şey geçmiyor.",
+      "caption": "خيبةٌ كبيرة"
+    },
+    {
+      "title": "ذكرى 63",
+      "file": "71FB2758-7650-4680-8FA4-352857A991E9.MP4",
+      "quote": "Bir zamanlar bendin, şimdi yalnızca hafızamın en ağır yerindesin.",
+      "caption": "مرارةُ الفراق"
+    },
+    {
+      "title": "ذكرى 64",
+      "file": "414a8727-1836-48c8-8988-f27fa43aef49.MP4",
+      "quote": "Seni, sevgisini yalnız başına taşıyan son insan gibi özlüyorum.",
+      "caption": "وجدانٌ يبكي"
+    },
+    {
+      "title": "ذكرى 65",
+      "file": "699dfe25-0da6-4dd4-a272-e63c4c92569a.MOV",
+      "quote": "Sana duyduğum özlem bir duygu değil; sonu gelmeyen bir düşüş.",
+      "caption": "حنينٌ قاتل"
+    },
+    {
+      "title": "ذكرى 66",
+      "file": "1541AA2A-288E-4C0A-817A-F70CA3667459.MP4",
+      "quote": "Giden tek şey sendin, ama eksilen bütün bendim.",
+      "caption": "مرايا حزينة"
+    },
+    {
+      "title": "ذكرى 67",
+      "file": "1779B68A-9AC7-4B54-BF0B-2C5ABF1FBC47.MP4",
+      "quote": "Canımı en çok yakan, ne kadar kaybolduğumu senin hiç bilmemendi.",
+      "caption": "شارعٌ خاوٍ"
+    },
+    {
+      "title": "ذكرى 68",
+      "file": "2912e3ba-84b2-4292-826d-c4f6fbb351f0.MP4",
+      "quote": "Hasret bile bu kadar ağır olmaktan yoruldu, ben hâlâ seni taşıyorum.",
+      "caption": "باقاتٌ ذابلة"
+    },
+    {
+      "title": "ذكرى 69",
+      "file": "6277c41d-bd88-482c-a7ed-0a2fa3940657.MP4",
+      "quote": "Seni, beni kıran aynı güçle sevdim.",
+      "caption": "رائحةُ غيابكِ"
+    },
+    {
+      "title": "ذكرى 70",
+      "file": "IMG_0505.mov",
+      "quote": "Bu karedeki yüzün, bin kelimeden daha çok can yakıyor.",
+      "caption": "ظلالٌ متعبة"
+    },
+    {
+      "title": "ذكرى 71",
+      "file": "IMG_0506.mov",
+      "quote": "Bu ana bir saniyeliğine bile dönmek için içimde neler vermezdim.",
+      "caption": "صورٌ باهتة"
+    },
+    {
+      "title": "ذكرى 72",
+      "file": "IMG_0507.mov",
+      "quote": "Bazı görüntüler gülümsüyor, ama insan onları izlerken içten içe ağlıyor.",
+      "caption": "عمرٌ معلّق"
+    },
+    {
+      "title": "ذكرى 73",
+      "file": "IMG_0508.mov",
+      "quote": "Sen buradasın, ben buradayım... ama ömür çoktan aramızdan geçti.",
+      "caption": "كلماتٌ بلا معنى"
+    },
+    {
+      "title": "ذكرى 74",
+      "file": "IMG_2528.mov",
+      "quote": "Sana ait her ayrıntı, nabzımdan bile daha derine kazındı.",
+      "caption": "أمنياتٌ ميتة"
+    },
+    {
+      "title": "ذكرى 75",
+      "file": "IMG_4377.mov",
+      "quote": "Bazen görüntüler insanlardan daha sadık oluyor; gitmiyorlar.",
+      "caption": "سرٌّ مدفون"
+    },
+    {
+      "title": "ذكرى 76",
+      "file": "IMG_4827.MOV",
+      "quote": "Seni görünce içimde aynı anda hem özlem hem kırılış büyüyor.",
+      "caption": "حقيقةٌ موجعة"
+    },
+    {
+      "title": "ذكرى 77",
+      "file": "IMG_4960.MOV",
+      "quote": "Dışarıdan sakin görünen şeyin altında görünmeyen bir çöküş var.",
+      "caption": "واقعٌ قاسٍ"
+    },
+    {
+      "title": "ذكرى 78",
+      "file": "IMG_5643.MOV",
+      "quote": "Ben sadece seni kaybetmedim; senden sonra kendime de yabancı kaldım.",
+      "caption": "حلمٌ يتلاشى"
+    },
+    {
+      "title": "ذكرى 79",
+      "file": "ScreenRecording_11-28-2025 21-47-31_1 copy.mp4",
+      "quote": "Bir ekran kaydı bile senden kalan acıyı taşıyabiliyorsa, ben nasıl taşımayayım?",
+      "caption": "رحيلٌ موجع"
+    },
+    {
+      "title": "ذكرى 80",
+      "file": "ScreenRecording_11-28-2025 21-47-31_1 copy 2.mp4",
+      "quote": "Her kopya seni çoğaltmıyor; yalnızca yokluğunu daha da ağırlaştırıyor.",
+      "caption": "غيابٌ مرير"
+    },
+    {
+      "title": "ذكرى 81",
+      "file": "ScreenRecording_11-28-2025 21-47-31_1 copy 3.mp4",
+      "quote": "Üç kayıt... ama her birinde aynı özlem, aynı yanış.",
+      "caption": "لحظةٌ معلّقة"
+    },
+    {
+      "title": "ذكرى 82",
+      "file": "video1.mp4",
+      "quote": "Bu video bir son değil; içimde uzun zamandır bitmeyen acının başka bir yüzü.",
+      "caption": "عمرٌ منكسر"
+    },
+    {
+      "title": "ذكرى 83",
+      "file": "395fd80ed0a74132a1f46eb4da40a5f7.MOV",
+      "quote": "Seni geri getirmiyor bu görüntüler; sadece içimdeki yokluğunu daha da derinleştiriyor.",
+      "caption": "ذاكرةٌ تنزف"
+    },
+    {
+      "title": "ذكرى 84",
+      "file": "47b2efce6aff43818c1ea68c2dc7cdd3.MOV",
+      "quote": "Bir an gibi geçtin hayatımdan, ama o an bütün bir ömre yetecek kadar derindi.",
+      "caption": "اسمُكِ يوجعني"
+    },
+    {
+      "title": "ذكرى 85",
+      "file": "84809e1568f2417facf455a011fb57f4.MOV",
+      "quote": "Senden sonra her sessizlik, içimde adınla yankılanan bir ağıt oldu.",
+      "caption": "صوتُكِ في رأسي"
+    },
+    {
+      "title": "ذكرى 86",
+      "file": "9f0d42343dba4738b3101e4fce9195e3.MOV",
+      "quote": "Bazı yüzler hatırlanmaz, içe işlenir; senin yüzün öyle.",
+      "caption": "لمساتٌ بعيدة"
+    },
+    {
+      "title": "ذكرى 87",
+      "file": "1c32d43379f247728723606d9b364969.MOV",
+      "quote": "Sen gittin ama gözlerin hâlâ bende; bakışın benim ruhuma kazınmış bir iz.",
+      "caption": "عيونٌ تبحث"
+    },
+    {
+      "title": "ذكرى 88",
+      "file": "1dce2093c50f450081830cc1828c204d.MOV",
+      "quote": "Seninle geçen anlar bitti, ama o anların ağırlığı içimde hâlâ taşınıyor.",
+      "caption": "يدٌ فارغة"
+    },
+    {
+      "title": "ذكرى 89",
+      "file": "f7ce2482ab8547ee9af2906f7908bbd5.MOV",
+      "quote": "Kısa ama derin... tıpkı seninle yaşadığım her şey gibi.",
+      "caption": "مكانٌ خاوٍ"
+    },
+    {
+      "title": "ذكرى 90",
+      "file": "b46e3379491340d1a62d3f0588f63350.MOV",
+      "quote": "Bu görüntüde sen varsın; ama içimde sadece eksikliğin var.",
+      "caption": "كرسيٌّ فارغ"
+    },
+    {
+      "title": "ذكرى 91",
+      "file": "4b774533d6b14d3ab6a88421d2a28437.MOV",
+      "quote": "Her saniyesi sana ait; her saniyesi içimde yeniden açılan bir yara.",
+      "caption": "مقعدٌ موحش"
+    },
+    {
+      "title": "ذكرى 92",
+      "file": "66f21adf2d644a90bd23b11236ebbaaa.MOV",
+      "quote": "Sen bir hatıra değilsin; sen, yıllarca dinmeyen bir özlemin adısın.",
+      "caption": "مرآةٌ صامتة"
+    },
+    {
+      "title": "ذكرى 93",
+      "file": "361973be4e69495ebb5c5511be4a5e70.MOV",
+      "quote": "Sen gittiğinden beri, kendi sessizliğimde bile sana rastlıyorum.",
+      "caption": "زمنٌ متوقف"
+    },
+    {
+      "title": "ذكرى 94",
+      "file": "9509b57da9184d809779aee2185146ac.MOV",
+      "quote": "Bu görüntüyü her açışımda, içimde aynı kapı tekrar kapanıyor.",
+      "caption": "أيامٌ بلا طعم"
+    },
+    {
+      "title": "ذكرى 95",
+      "file": "39e807d5ed594743aa0a16d395974ba4.MOV",
+      "quote": "Seni görmek artık huzur değil; içimde unutmaya çalıştığım her şeyin hatırlatıcısı.",
+      "caption": "نوافذُ مغلقة"
+    },
+    {
+      "title": "ذكرى 96",
+      "file": "ade10aeb59f24bca83c25a7ae61f3897.MOV",
+      "quote": "Bazı anlar bir kareye sığmaz; bütün bir ömrü ağırlığıyla taşır.",
+      "caption": "أبوابٌ موصدة"
+    },
+    {
+      "title": "ذكرى 97",
+      "file": "7a6880b7453449f99d5b55c21e463e4c.MOV",
+      "quote": "Sen yokken bile, varlığın içimde bir gölge gibi hep aynı yerde duruyor.",
+      "caption": "طرقاتٌ ضائعة"
+    },
+    {
+      "title": "ذكرى 98",
+      "file": "e909bd3f338640b1acba792e7e05e13e.MOV",
+      "quote": "Bu kareye baktığımda, kaybettiğim sadece sen değilsin; o günkü ben de gitmiş.",
+      "caption": "عودةٌ مستحيلة"
+    },
+    {
+      "title": "ذكرى 99",
+      "file": "4f9a169103614331864649d301255bc0.MOV",
+      "quote": "Hatıra dediğimiz şey bazen sadece bir teselli değil, taşıması en ağır yüktür.",
+      "caption": "شموعٌ منطفئة"
+    },
+    {
+      "title": "ذكرى 100",
+      "file": "b86cdb16dfd84bb2bbca8f8b7a8399b9.MOV",
+      "quote": "Yüzüncü iz... ve hâlâ ilk gün gibi kanıyor.",
+      "caption": "مئةُ ذكرى"
+    },
+    {
+      "title": "ذكرى 101",
+      "file": "bff5f447cf8a4dba95543c4f2c49ee51.MOV",
+      "quote": "Seni görünce zaman duruyor; sonra geri çekildiğinde, içimde bir yıl daha eksiliyor.",
+      "caption": "قطرةٌ من ندم"
+    },
+    {
+      "title": "ذكرى 102",
+      "file": "e9d64c67bc48437282815edb43ba59ba.MOV",
+      "quote": "Her görüntü bir veda; ama bende veda etmeyi öğrenememiş bir kalp var.",
+      "caption": "صرخةٌ صامتة"
+    },
+    {
+      "title": "ذكرى 103",
+      "file": "21f9993323b84f0ab341ba0a68bb7404.MOV",
+      "quote": "Her bakışın, içimde söze dönüşmemiş bir cümle bırakırdı.",
+      "caption": "عتمةٌ ثقيلة"
+    },
+    {
+      "title": "ذكرى 104",
+      "file": "3f326006a21144aa867d05a45723c056.MOV",
+      "quote": "Bu görüntü kalbi yormuyor; sadece içimdeki o eski sızıyı yeniden uyandırıyor.",
+      "caption": "غيمةُ حزن"
+    },
+    {
+      "title": "ذكرى 105",
+      "file": "22c0b61878694fa3bd72106a07a0dc24.MOV",
+      "quote": "Sen yokken bile, hayalin benimle aynı yastığa baş koyuyor.",
+      "caption": "أمسٌ بعيد"
+    },
+    {
+      "title": "ذكرى 106",
+      "file": "295fb2c8eba242bdbd167816ac338a5d.MOV",
+      "quote": "Bir an oldun ömrümde, ama o an hâlâ saatin akrebine takılı.",
+      "caption": "ساعاتٌ تذوب"
+    },
+    {
+      "title": "ذكرى 107",
+      "file": "ea424380b48243fca113e8c5c8c9b70b.MOV",
+      "quote": "Sessizliğin bile bir sesi varmış; meğer en derin yaralar onunla açılırmış.",
+      "caption": "عمرٌ يحترق"
+    },
+    {
+      "title": "ذكرى 108",
+      "file": "0123c9625b7b4226aefbc31fee8c69cd.MOV",
+      "quote": "Geçmişe bakmak değil bu; geçmişin hâlâ içimde nefes aldığını görmek.",
+      "caption": "روحٌ تائهة"
+    },
+    {
+      "title": "ذكرى 109",
+      "file": "a89b18b86e8047fdbe2a454c7d44e002.MOV",
+      "quote": "Bazen bir görüntü, ömrün eksik kalan parçasını bir an için tamamlıyor.",
+      "caption": "نَفَسٌ متعب"
+    },
+    {
+      "title": "ذكرى 110",
+      "file": "dfb616011a674b1381804a36d9a21ee5.MOV",
+      "quote": "Senin gülüşün hâlâ benim en sessiz tesellim, en gürültülü acım.",
+      "caption": "ضحكةٌ ميتة"
+    },
+    {
+      "title": "ذكرى 111",
+      "file": "52bf84e9584f48198bb212a86b63b1fb.MOV",
+      "quote": "Bittiği yerden değil, başladığı yerden kanıyor bazı sevgiler.",
+      "caption": "بدايةٌ موجعة"
+    },
+    {
+      "title": "ذكرى 112",
+      "file": "c6696eb2f1df426e99dc43a20dc45ecd.MOV",
+      "quote": "Görüntün geçti, ama içimde geçmeyen bir şey kaldı: senin yokluğun.",
+      "caption": "غيابُكِ يكبر فيّ"
+    },
+    {
+      "title": "ذكرى 113",
+      "file": "277dc5ac9c6c4c23b68376f0970e981e.MOV",
+      "quote": "Bazı anlar geçer, bazıları ise insanın içinde demir atar; sen ikincisindendin.",
+      "caption": "أنتِ في كل شيء"
+    },
+    {
+      "title": "ذكرى 114",
+      "file": "069d69372014491189bc4c2bd3b33ed3.MOV",
+      "quote": "Bu kadar az bir kareye, bu kadar çok hatıra nasıl sığmış?",
+      "caption": "لا شيء يعزّيني"
+    },
+    {
+      "title": "ذكرى 115",
+      "file": "c75da398da1b488cae52c203171eefed.MOV",
+      "quote": "Sen yokken sustuğum her gün, içimde başka bir şey biraz daha öldü.",
+      "caption": "ذكرى لا تموت"
+    },
+    {
+      "title": "ذكرى 116",
+      "file": "9240ae9e1c3342f6809e00ff3892c5a0.MOV",
+      "quote": "Bu kareye dokunmak istesem, parmaklarım yıllar öncesine değecek.",
+      "caption": "زمنٌ لا يعود"
+    },
+    {
+      "title": "ذكرى 117",
+      "file": "cbc7945cb50d4647920ed962874f0f7f.MOV",
+      "quote": "Seni hatırlamak değil bu; seninle aynı havayı tekrar solumaya çalışmak.",
+      "caption": "هواءٌ بلا أنفاس"
+    },
+    {
+      "title": "ذكرى 118",
+      "file": "bfcfaf95d12547f0b769ddcd84c3f755.MOV",
+      "quote": "Bazı görüntüler kalır; çünkü orada hâlâ söylenmemiş bir 'kal' vardır.",
+      "caption": "قلبٌ يتعب"
+    },
+    {
+      "title": "ذكرى 119",
+      "file": "5a655140e69b4d7bbe3ba0c8cf4bb40d.MOV",
+      "quote": "Sen, ömrümün en sessiz ama en derin sayfasısın.",
+      "caption": "صفحةٌ بيضاء"
+    },
+    {
+      "title": "ذكرى 120",
+      "file": "95f9780d1f3a463cb1c966bfabc9d82e.MOV",
+      "quote": "Bir kare daha... ve içimde bir özlem daha derinleşiyor.",
+      "caption": "ومضةٌ أخيرة"
+    },
+    {
+      "title": "ذكرى 121",
+      "file": "2c15400f1fa04f7484731c984c984a70.MOV",
+      "quote": "Sen geçtiğinde, içimde sustuğum her şey yeniden konuşmaya başlıyor.",
+      "caption": "صدى يبكي"
+    },
+    {
+      "title": "ذكرى 122",
+      "file": "4ecc36df37b840c685f76364639fd04a.MOV",
+      "quote": "Bu görüntüde sen değil, içimdeki o eski ben de canlanıyor; ikimiz birden eksildik.",
+      "caption": "ظلٌّ يتلاشى"
+    },
+    {
+      "title": "ذكرى 123",
+      "file": "1ed9271c02964c99a64c6928e47370b4.MOV",
+      "quote": "Sen bir hatıra olarak değil, hâlâ devam eden bir özlem olarak yaşıyorsun bende.",
+      "caption": "اشتياقٌ بلا نهاية"
+    }
+  ],
+  "photos": [
+    "01AFA807-5783-4079-BEF0-E550D5E4823F.jpeg",
+    "03B2AA02-E804-45BD-807B-83B231559261.jpeg",
+    "098C629F-99F8-4E2D-B11A-3BBD69934732.jpeg",
+    "0A3248C0-A6EC-42CB-884F-537CA7298787.jpeg",
+    "0AA5EEDD-AAF8-4319-A6F9-742574DD573B.jpeg",
+    "0BB6D279-9934-45A7-891E-B2C202AFE7E1.jpeg",
+    "0C38F139-6943-4DD6-B576-20B48DD1F5B1.jpeg",
+    "0D2BAA9A-82C1-4E47-9EE9-B2A63DB35758.jpeg",
+    "0D48E214-6ED4-4991-A454-E466D5F4B788.png",
+    "0FAF7339-2E7F-4468-9CAF-E17A4C51F862.jpeg",
+    "0FF8C336-400E-4A09-9A28-4A35E4D34D0D.jpeg",
+    "105537F6-ECB9-4A22-8C03-01B349D6C552.jpeg",
+    "144C667B-903C-48C7-9A23-9941B70DDB52.jpeg",
+    "16C3C5DA-B88E-493E-8C90-A230826F7206.jpeg",
+    "171005DF-2A0E-4C39-A3CB-608F53AC1F7E.jpeg",
+    "17DB1EE1-631A-4009-BA16-094F34AD1AF2.jpeg",
+    "185751E6-738A-49C2-81A2-583E3BDE90DB.jpeg",
+    "1CBBAA46-550C-4E5D-A769-40B09C377A92.jpeg",
+    "1E5C5FE7-0CFF-4744-8578-924DB8E41256.jpeg",
+    "24AD71F4-B786-4A3C-9A4E-5089A39B958C.jpeg",
+    "24E0CFEA-BB25-40A2-B85C-32F9E267CFDA.jpeg",
+    "2C762F5E-144B-47AB-9065-4D016A5E78FB.jpeg",
+    "2E92524C-E29D-4D32-B246-4FCFED8732DD.jpeg",
+    "30068365-3B1C-43BF-8AF7-770A4AE4F842.jpeg",
+    "30706563-B6C0-428F-BF43-B5BCA055C73A.jpeg",
+    "324439E2-A409-4CB9-8389-8759F1E61A7A.jpeg",
+    "3430D096-58BA-4C46-96FB-8DFF44801F20.jpeg",
+    "3D182AA1-181D-4C0A-95BA-A59D73283408.jpeg",
+    "3F38024F-C074-4DF5-9FBA-3F217CA59D58.jpeg",
+    "3FF77FC2-C3B6-42EB-B14C-9545864C8F48.jpeg",
+    "401F477E-718F-453D-94EA-1A265E7EF066.jpeg",
+    "4250710C-18A7-43AE-A07E-F5F79AED82B3.jpeg",
+    "488C108E-EA20-41F4-B261-97D65B66AB19.jpeg",
+    "493ED20B-0A7B-452A-8E85-7410560C3B0F.jpeg",
+    "4B1DC9C6-DC08-4058-A1D0-B7C09C8662E6.jpeg",
+    "4EAA8C82-E3AA-41F9-A05B-3DA111E89762.jpeg",
+    "4F77A6DF-C2D7-4419-A888-7A4BF28031CE.jpeg",
+    "52FF3D59-EA95-4D6E-BE0B-943C3A2FB74A.png",
+    "539109C3-349C-48EB-B326-0C87FC345D12.jpeg",
+    "546D6F25-6D4F-41BA-B3B2-FDC0CA79B62B.jpeg",
+    "56862B71-93A5-49A0-B027-B15C4CF470C1.jpeg",
+    "5D03DA82-686D-454B-B9E3-F6D0951666F3.jpeg",
+    "5D187F55-2354-46CF-AE4D-95978D355867.jpeg",
+    "5D2B8D5A-D2B4-4275-B760-2DA3FCC2520F.jpeg",
+    "624032DE-1D05-49BE-BC00-E95C1539E9E9.jpeg",
+    "648AA84A-9FDF-4EBC-AC65-EE89DB16947B.jpeg",
+    "66075BCE-4B7D-4D41-8AE9-B0F45CDF5893.jpeg",
+    "661D5A33-8388-41B3-B5BF-624FB173472A.jpeg",
+    "68BC531B-F6B9-4925-B642-B864933DE101.jpeg",
+    "691C7E4C-0BD0-4F5B-B7F2-F14C6F721C2C.jpeg",
+    "6937B147-6006-45EB-B2BE-6255BD549F21.jpeg",
+    "6CEC8EC9-E6D5-4C0F-98B0-FD8FFD98D81B.jpeg",
+    "6FD09758-C435-4491-B323-FE8238B4B91D.jpeg",
+    "70A61166-72CF-4A6F-9FDB-8277D0498D00.jpeg",
+    "70E9831F-03B3-4114-8DA6-EAD147BCEE5F.jpeg",
+    "71571BE2-E6AC-44D9-878C-42AA419C17AB.jpeg",
+    "71A46A42-85E9-451B-8AB1-A04239363817.jpeg",
+    "7227B61A-77BA-4B7E-9DFD-A0E86701A430.jpeg",
+    "732314D6-E036-4A68-AC24-2A92B2AE6344.jpeg",
+    "75E50A12-92FA-45E2-9B48-9261B945E6F1.jpeg",
+    "77956FA2-8252-44D2-B952-C63ECC69FE0A.jpeg",
+    "77DC5733-3E86-4B05-9021-CCD44F2FF8B7.jpeg",
+    "78036C50-23B9-468A-A4DF-2D33A4F3FC0D.jpeg",
+    "78062998-B6BB-4AB6-A0AF-A6208EEDF19B.jpeg",
+    "78ABBA55-C5DA-475C-9C9B-49C731CE7BC1.jpeg",
+    "7992DC46-E57A-47A8-976B-A2F388454B0D.jpeg",
+    "7CCEDAFE-9181-4DA9-B076-1481015A1CE7.jpeg",
+    "7EC6C5F3-93D9-45C8-AEC0-395F0D17F375.jpeg",
+    "8230F0C9-C2A5-4F5F-B5F3-47222210BC9A.jpeg",
+    "854da13c-1474-4bba-9ceb-08c3478cf44d.jpeg",
+    "860670DE-0450-4770-964E-744B26D584F3.jpeg",
+    "862F5BE3-68EF-41DD-A90B-F2FD11A9F24D.jpeg",
+    "86407DC0-0518-4C93-844D-33425A382735.jpeg",
+    "865EA7B2-4954-4B62-9C43-6FCD32ADC65B.jpeg",
+    "8784ECC0-CB95-480C-9B55-54EE6975BD79.jpeg",
+    "8F1FDCB9-D83E-457C-8A5D-9F7F5ABEFFBD.jpeg",
+    "90AA6ACE-0C1D-411E-9623-DFDE9A9EE0F6.jpeg",
+    "9125520D-5EB8-424B-8B07-02DF25A6FEDC.jpeg",
+    "925767B1-16EE-4A73-AB53-2EFA56395BB4.jpeg",
+    "95788577-CFD6-4AFC-ADBC-2453F5C715CD.jpeg",
+    "96D7B056-D755-49AA-B34F-3919F7727D65.jpeg",
+    "9759D851-7BBC-41D5-B082-71829FC4B57F.jpeg",
+    "9E4F55FE-0095-47CF-904E-06520D0ADE45.jpeg",
+    "9EFA0189-5EBB-466D-87CA-637DC3945E95.jpeg",
+    "9F484EDF-AD55-451A-8372-7B45FD63CB21.jpeg",
+    "A09DA831-3C18-4707-9CE2-0435BE4626E0.png",
+    "A2AA7001-3BF8-4935-B4BA-91F8C5E096F8.jpeg",
+    "A5D3CA56-4EA9-4E6B-80F8-E35C32FC137D.jpeg",
+    "A67E0A31-2987-4E97-B373-68452544D956.jpeg",
+    "A73DD9DE-7E99-45FC-B0C9-8321998F3569.jpeg",
+    "A769E1E2-91A9-4D62-9F10-8F5587AF21F1.jpeg",
+    "A85FC1B4-2C9D-4B5A-933F-FB3EFE060FFA.jpeg",
+    "B261226E-11E0-4DFF-9F97-FFCCAC09F181.jpeg",
+    "B3D0027D-60EE-403F-ACE6-FDBB70DD5E66.jpeg",
+    "BB9DEF98-281E-4038-9665-E54AD8E02214.jpeg",
+    "BC4D6D35-CD35-4798-887C-256F4A1A70C7.jpeg",
+    "BFABA199-BB96-4097-B53C-C6C000B2E5C6.jpeg",
+    "C03ED87C-1F2D-466C-89C7-264F1C5C3211.jpeg",
+    "C1A8E87F-FE8F-4F28-B1AC-FEF4FCBBD7F6.jpeg",
+    "C25F19C7-D13E-4BD4-AF75-83227A76478D.jpeg",
+    "C31028B9-7158-4066-9818-A450562DACED.jpeg",
+    "C312C443-D4B6-471F-A480-06277F771E80.jpeg",
+    "C76614CD-4E91-4796-9954-B0A9489DA512.jpeg",
+    "C894485D-5CDF-463D-9070-2C4363140F7B.jpeg",
+    "CA5D46C1-357F-4641-A415-1E6C9760EC16.jpeg",
+    "D0775B76-61AC-495B-B2C5-6432DF278BCD.jpeg",
+    "D5DCC1B5-1A7F-4D02-B4B4-9261771A3101.jpeg",
+    "D5DD0425-D600-4CD7-A09B-7C6CD46292B1.jpeg",
+    "DAB4AA82-8136-4FF8-BE09-3A69EAD20899.jpeg",
+    "DEAF7805-96ED-4D55-AF81-5C9B68841688.jpeg",
+    "E0C2AD99-1760-4990-BD6A-9AA33B8773B1.jpeg",
+    "E0D3C6D7-EED8-4BE3-94A3-A9520EED93CB.jpeg",
+    "E19F207D-3CBF-429C-9C84-3D622B096885.jpeg",
+    "E30D35DD-C515-452C-B399-F209F4D5C1C0.jpeg",
+    "E597B914-0730-4B38-89D1-749206E7799F.jpeg",
+    "E7B0EA36-3DE8-4BEF-9450-A24A143260DC.jpeg",
+    "E81A0FD9-4E29-41AE-A819-227A225308AF.jpeg",
+    "E880C6FB-6DFF-4085-A64F-1C75759382BA.jpeg",
+    "E9C766DA-3F8C-4352-92EA-860D0F26CB10.jpeg",
+    "EA64D78B-947E-4E09-8056-043FAE0010E1.jpeg",
+    "EFB3372D-6BF4-4CF9-9EBE-689E3BA39AF5.jpeg",
+    "F311C73E-3284-436F-8900-41D51669F915.jpeg",
+    "F4106913-34CC-4DB2-9C4B-5238BB6F1DE9.jpeg",
+    "FC1B06AF-574E-4672-8049-5400E0D5B04E.jpeg",
+    "FCBD784C-AEA7-4EDE-B2CA-FFDF7CD826D9.jpeg",
+    "FCC957F2-22FC-4273-BB29-417085D5314B.jpeg",
+    "IMG_5840.jpeg"
+  ]
 }

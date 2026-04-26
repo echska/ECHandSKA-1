@@ -1,51 +1,31 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { type Translations, type Lang } from "@/i18n/translations";
 import Footer from "@/components/Footer";
-import { allPhotos } from "@/data/allPhotos";
 import usePageAudio from "@/hooks/usePageAudio";
 import { privateImage } from "@/lib/privateAssets";
+import { usePrivateContent, pickLangPages } from "@/hooks/usePrivateContent";
 
 interface Props {
   t: Translations;
   lang: Lang;
 }
 
-interface StoryCaption {
-  title: string;
-  text: string;
-}
-
-interface PrivateContent {
-  captions?: { ar?: StoryCaption[]; tr?: StoryCaption[] };
-}
-
 export default function Photos({ t, lang }: Props) {
   usePageAudio("song2.mp3");
   const [lightbox, setLightbox] = useState<string | null>(null);
-  const [captions, setCaptions] = useState<StoryCaption[]>([]);
-
-  useEffect(() => {
-    let cancelled = false;
-    fetch("/api/private/content", { credentials: "same-origin" })
-      .then((r) => (r.ok ? (r.json() as Promise<PrivateContent>) : null))
-      .then((data) => {
-        if (cancelled || !data) return;
-        const langKey: "ar" | "tr" = lang === "ar" ? "ar" : "tr";
-        setCaptions(data.captions?.[langKey] ?? []);
-      })
-      .catch(() => {});
-    return () => {
-      cancelled = true;
-    };
-  }, [lang]);
+  const data = usePrivateContent();
+  const p = pickLangPages(data, lang);
+  const langKey: "ar" | "tr" = lang === "ar" ? "ar" : "tr";
+  const captions = data?.captions?.[langKey] ?? [];
+  const allPhotos = data?.photos ?? [];
 
   const specialPhotos = [
-    { src: privateImage("photo1.jpg"), text: t.photo1_text },
-    { src: privateImage("photo2.png"), text: t.photo2_text },
-    { src: privateImage("photo3.png"), text: t.photo3_text },
-    { src: privateImage("photo4.jpg"), text: t.photo4_text },
-    { src: privateImage("photo5.jpg"), text: t.photo5_text },
-    { src: privateImage("photo6.jpg"), text: t.photo6_text },
+    { src: privateImage("photo1.jpg"), text: p.photo1_text },
+    { src: privateImage("photo2.png"), text: p.photo2_text },
+    { src: privateImage("photo3.png"), text: p.photo3_text },
+    { src: privateImage("photo4.jpg"), text: p.photo4_text },
+    { src: privateImage("photo5.jpg"), text: p.photo5_text },
+    { src: privateImage("photo6.jpg"), text: p.photo6_text },
   ];
 
   const albumPhotos = allPhotos.map((name, i) => {
@@ -61,20 +41,20 @@ export default function Photos({ t, lang }: Props) {
     <div className="page-content">
       <div className="page-header">
         <h1>{t.photos_title}</h1>
-        <p className="photos-header-sub">{t.photos_header_sub}</p>
+        {p.photos_header_sub && <p className="photos-header-sub">{p.photos_header_sub}</p>}
       </div>
 
       <div className="photo-grid">
-        {specialPhotos.map((p, i) => (
+        {specialPhotos.map((ph, i) => (
           <div key={`s-${i}`} className="photo-card glass">
             <img
-              src={p.src}
+              src={ph.src}
               alt=""
               className="photo-img"
-              onClick={() => setLightbox(p.src)}
+              onClick={() => setLightbox(ph.src)}
               style={{ cursor: "pointer" }}
             />
-            <p className="photo-caption">{p.text}</p>
+            {ph.text && <p className="photo-caption">{ph.text}</p>}
           </div>
         ))}
 
@@ -87,8 +67,8 @@ export default function Photos({ t, lang }: Props) {
             style={{ cursor: "pointer" }}
           />
           <div className="photo-caption-featured">
-            <p className="featured-quote">{t.photo7_text}</p>
-            <p className="featured-sub">{t.photo7_sub}</p>
+            {p.photo7_text && <p className="featured-quote">{p.photo7_text}</p>}
+            {p.photo7_sub && <p className="featured-sub">{p.photo7_sub}</p>}
           </div>
         </div>
       </div>
@@ -100,18 +80,18 @@ export default function Photos({ t, lang }: Props) {
       </div>
 
       <div className="photo-grid album-grid">
-        {albumPhotos.map((p, i) => (
+        {albumPhotos.map((ph, i) => (
           <div key={`a-${i}`} className="photo-card glass">
             <img
-              src={p.src}
+              src={ph.src}
               alt=""
               className="photo-img"
-              onClick={() => setLightbox(p.src)}
+              onClick={() => setLightbox(ph.src)}
               style={{ cursor: "pointer" }}
             />
             <div className="album-caption-block">
-              {p.title && <span className="album-caption-title">{p.title}</span>}
-              <p className="album-caption-text">{p.text}</p>
+              {ph.title && <span className="album-caption-title">{ph.title}</span>}
+              <p className="album-caption-text">{ph.text}</p>
             </div>
           </div>
         ))}
@@ -130,7 +110,7 @@ export default function Photos({ t, lang }: Props) {
         </div>
       )}
 
-      <Footer text={t.photos_footer} />
+      {p.photos_footer && <Footer text={p.photos_footer} />}
     </div>
   );
 }

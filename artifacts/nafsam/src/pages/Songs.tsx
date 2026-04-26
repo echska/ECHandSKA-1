@@ -1,16 +1,22 @@
 import { type Translations } from "@/i18n/translations";
 import Footer from "@/components/Footer";
+import { useLang } from "@/hooks/useLang";
+import { usePrivateContent, pickLangPages } from "@/hooks/usePrivateContent";
 
 interface Props {
   t: Translations;
 }
 
 export default function Songs({ t }: Props) {
+  const { lang } = useLang();
+  const data = usePrivateContent();
+  const p = pickLangPages(data, lang);
+
   const songs = [
-    { title: "Be Koja Residi - Dorcci", text: t.song1_text, src: "/api/private/media/song1.mp3" },
-    { title: "Ghatle Amd - Dorcci", text: t.song2_text, src: "/api/private/media/song2.mp3" },
-    { title: t.song3_title, text: t.song3_text, src: "/api/private/media/song3.mp3" },
-    { title: t.song4_title, text: t.song4_text, src: "/api/private/media/song4.mp3" },
+    { title: "Be Koja Residi - Dorcci", text: p.song1_text, src: "/api/private/media/song1.mp3" },
+    { title: "Ghatle Amd - Dorcci", text: p.song2_text, src: "/api/private/media/song2.mp3" },
+    { title: t.song3_title, text: p.song3_text, src: "/api/private/media/song3.mp3" },
+    { title: t.song4_title, text: p.song4_text, src: "/api/private/media/song4.mp3" },
   ];
 
   return (
@@ -24,7 +30,7 @@ export default function Songs({ t }: Props) {
         {songs.map((s, i) => (
           <div key={i} className="song-card glass">
             <h3>{s.title}</h3>
-            <p>{s.text}</p>
+            {s.text && <p>{s.text}</p>}
             <audio controls src={s.src} className="audio-player">
               Your browser does not support audio.
             </audio>
@@ -32,7 +38,7 @@ export default function Songs({ t }: Props) {
         ))}
       </div>
 
-      <Footer text={t.songs_footer} />
+      {p.songs_footer && <Footer text={p.songs_footer} />}
     </div>
   );
 }

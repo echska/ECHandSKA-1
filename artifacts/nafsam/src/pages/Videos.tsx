@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useState } from "react";
 import { type Translations } from "@/i18n/translations";
-import { videosData } from "@/data/videosData";
+import { useLang } from "@/hooks/useLang";
+import { usePrivateContent, pickLangPages } from "@/hooks/usePrivateContent";
 
 interface Props {
   t: Translations;
@@ -28,6 +29,10 @@ function Thumb({ file }: { file: string }) {
 
 export default function Videos({ t }: Props) {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
+  const { lang } = useLang();
+  const data = usePrivateContent();
+  const p = pickLangPages(data, lang);
+  const videosData = data?.videos ?? [];
 
   const openModal = useCallback((index: number) => {
     setActiveIndex(index);
@@ -36,16 +41,18 @@ export default function Videos({ t }: Props) {
   const closeModal = useCallback(() => setActiveIndex(null), []);
 
   const prevVideo = useCallback(() => {
-    setActiveIndex((i) =>
-      i === null ? null : (i - 1 + videosData.length) % videosData.length
-    );
-  }, []);
+    setActiveIndex((i) => {
+      if (i === null || videosData.length === 0) return i;
+      return (i - 1 + videosData.length) % videosData.length;
+    });
+  }, [videosData.length]);
 
   const nextVideo = useCallback(() => {
-    setActiveIndex((i) =>
-      i === null ? null : (i + 1) % videosData.length
-    );
-  }, []);
+    setActiveIndex((i) => {
+      if (i === null || videosData.length === 0) return i;
+      return (i + 1) % videosData.length;
+    });
+  }, [videosData.length]);
 
   useEffect(() => {
     if (activeIndex === null) return;
@@ -63,19 +70,19 @@ export default function Videos({ t }: Props) {
     };
   }, [activeIndex, closeModal, prevVideo, nextVideo]);
 
-  const active = activeIndex !== null ? videosData[activeIndex] : null;
+  const active = activeIndex !== null ? videosData[activeIndex] ?? null : null;
 
   return (
     <div className="videos-page">
       <section className="v-hero" dir="rtl">
-        <h1 className="v-hero-title">الذكريات التي ما زالت تتنفس</h1>
-        <p className="v-hero-sub">كل مشهد يعيدني إليكِ، ثم يتركني وحدي من جديد</p>
+        <h1 className="v-hero-title">{t.videos_title}</h1>
+        {p.videos_text && <p className="v-hero-sub">{p.videos_text}</p>}
         <div className="v-hero-line" />
       </section>
 
       <section className="v-stats" dir="rtl">
         <div className="v-stat">
-          <div className="v-stat-label">ذكرى</div>
+          <div className="v-stat-label">{t.video_memory_label}</div>
           <div className="v-stat-value">{videosData.length}</div>
         </div>
       </section>
@@ -107,7 +114,7 @@ export default function Videos({ t }: Props) {
         ))}
       </div>
 
-      <div className="v-footer">ECH SKA</div>
+      {p.videos_footer && <div className="v-footer">{p.videos_footer}</div>}
 
       {active && (
         <div
