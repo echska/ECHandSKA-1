@@ -71,14 +71,17 @@ export interface PrivateContent {
 
 let cache: PrivateContent | null = null;
 let inflight: Promise<PrivateContent | null> | null = null;
+let generation = 0;
 const subscribers = new Set<(c: PrivateContent | null) => void>();
 
 async function loadPrivateContent(): Promise<PrivateContent | null> {
   if (cache) return cache;
   if (inflight) return inflight;
+  const myGen = generation;
   inflight = fetch("/api/private/content", { credentials: "same-origin" })
     .then((r) => (r.ok ? (r.json() as Promise<PrivateContent>) : null))
     .then((data) => {
+      if (myGen !== generation) return null;
       if (data) {
         cache = data;
         subscribers.forEach((cb) => cb(cache));
@@ -93,7 +96,9 @@ async function loadPrivateContent(): Promise<PrivateContent | null> {
 }
 
 export function clearPrivateContentCache(): void {
+  generation += 1;
   cache = null;
+  inflight = null;
   subscribers.forEach((cb) => cb(null));
 }
 
