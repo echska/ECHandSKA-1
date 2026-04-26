@@ -107,4 +107,13 @@ export const videosData: VideoItem[] = [
   { title: "ذكرى 100", file: "b86cdb16dfd84bb2bbca8f8b7a8399b9.MOV", quote: "Yüzüncü iz... ve hâlâ ilk gün gibi kanıyor." },
   { title: "ذكرى 101", file: "bff5f447cf8a4dba95543c4f2c49ee51.MOV", quote: "Seni görünce zaman duruyor; sonra geri çekildiğinde, içimde bir yıl daha eksiliyor." },
   { title: "ذكرى 102", file: "e9d64c67bc48437282815edb43ba59ba.MOV", quote: "Her görüntü bir veda; ama bende veda etmeyi öğrenememiş bir kalp var." },
+  { title: "ذكرى 103", file: "21f9993323b84f0ab341ba0a68bb7404.MOV", quote: "Her bakışın, içimde söze dönüşmemiş bir cümle bırakırdı." },
+  { title: "ذكرى 104", file: "3f326006a21144aa867d05a45723c056.MOV", quote: "Bu görüntü kalbi yormuyor; sadece içimdeki o eski sızıyı yeniden uyandırıyor." },
+  { title: "ذكرى 105", file: "22c0b61878694fa3bd72106a07a0dc24.MOV", quote: "Sen yokken bile, hayalin benimle aynı yastığa baş koyuyor." },
+  { title: "ذكرى 106", file: "295fb2c8eba242bdbd167816ac338a5d.MOV", quote: "Bir an oldun ömrümde, ama o an hâlâ saatin akrebine takılı." },
+  { title: "ذكرى 107", file: "ea424380b48243fca113e8c5c8c9b70b.MOV", quote: "Sessizliğin bile bir sesi varmış; meğer en derin yaralar onunla açılırmış." },
+  { title: "ذكرى 108", file: "0123c9625b7b4226aefbc31fee8c69cd.MOV", quote: "Geçmişe bakmak değil bu; geçmişin hâlâ içimde nefes aldığını görmek." },
+  { title: "ذكرى 109", file: "a89b18b86e8047fdbe2a454c7d44e002.MOV", quote: "Bazen bir görüntü, ömrün eksik kalan parçasını bir an için tamamlıyor." },
+  { title: "ذكرى 110", file: "dfb616011a674b1381804a36d9a21ee5.MOV", quote: "Senin gülüşün hâlâ benim en sessiz tesellim, en gürültülü acım." },
+  { title: "ذكرى 111", file: "52bf84e9584f48198bb212a86b63b1fb.MOV", quote: "Bittiği yerden değil, başladığı yerden kanıyor bazı sevgiler." },
 ];
