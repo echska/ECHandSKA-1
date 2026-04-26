@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { type Translations, type Lang } from "@/i18n/translations";
 import Footer from "@/components/Footer";
 import usePageAudio from "@/hooks/usePageAudio";
@@ -10,11 +10,35 @@ interface Props {
   lang: Lang;
 }
 
+function pad2(n: number) {
+  return n < 10 ? `0${n}` : String(n);
+}
+
 export default function Photos({ t, lang }: Props) {
   usePageAudio("song2.mp3");
   const [lightbox, setLightbox] = useState<string | null>(null);
+  const lightboxCloseRef = useRef<HTMLButtonElement>(null);
+  const lastFocusedRef = useRef<HTMLElement | null>(null);
   const data = usePrivateContent();
   const p = pickLangPages(data, lang);
+
+  useEffect(() => {
+    if (!lightbox) return;
+    lastFocusedRef.current = document.activeElement as HTMLElement | null;
+    const originalOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    const t1 = window.setTimeout(() => lightboxCloseRef.current?.focus(), 30);
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setLightbox(null);
+    };
+    window.addEventListener("keydown", onKey);
+    return () => {
+      window.clearTimeout(t1);
+      window.removeEventListener("keydown", onKey);
+      document.body.style.overflow = originalOverflow;
+      lastFocusedRef.current?.focus?.();
+    };
+  }, [lightbox]);
   const langKey: "ar" | "tr" = lang === "ar" ? "ar" : "tr";
   const captions = data?.captions?.[langKey] ?? [];
   const allPhotos = data?.photos ?? [];
@@ -38,7 +62,7 @@ export default function Photos({ t, lang }: Props) {
   });
 
   return (
-    <div className="page-content">
+    <div className="page-content photos-luxe">
       <div className="page-header">
         <h1>{t.photos_title}</h1>
         {p.photos_header_sub && <p className="photos-header-sub">{p.photos_header_sub}</p>}
@@ -46,31 +70,56 @@ export default function Photos({ t, lang }: Props) {
 
       <div className="photo-grid">
         {specialPhotos.map((ph, i) => (
-          <div key={`s-${i}`} className="photo-card glass">
-            <img
-              src={ph.src}
-              alt=""
-              className="photo-img"
+          <article key={`s-${i}`} className="photo-card glass">
+            <div
+              className="photo-card-media"
               onClick={() => setLightbox(ph.src)}
-              style={{ cursor: "pointer" }}
-            />
-            {ph.text && <p className="photo-caption">{ph.text}</p>}
-          </div>
+              role="button"
+              tabIndex={0}
+              onKeyDown={(e) => {
+                if (e.key === "Enter" || e.key === " ") {
+                  e.preventDefault();
+                  setLightbox(ph.src);
+                }
+              }}
+            >
+              <img src={ph.src} alt={ph.text ?? ""} className="photo-img" loading="lazy" />
+              <span className="photo-card-badge">{pad2(i + 1)}</span>
+              {ph.text && (
+                <div className="photo-card-overlay">
+                  <p className="photo-card-overlay-text">{ph.text}</p>
+                </div>
+              )}
+            </div>
+          </article>
         ))}
 
-        <div className="photo-card glass photo-card-featured">
-          <img
-            src={privateImage("photo7.jpg")}
-            alt=""
-            className="photo-img"
+        <article className="photo-card glass photo-card-featured">
+          <div
+            className="photo-card-media"
             onClick={() => setLightbox(privateImage("photo7.jpg"))}
-            style={{ cursor: "pointer" }}
-          />
+            role="button"
+            tabIndex={0}
+            onKeyDown={(e) => {
+              if (e.key === "Enter" || e.key === " ") {
+                e.preventDefault();
+                setLightbox(privateImage("photo7.jpg"));
+              }
+            }}
+          >
+            <img
+              src={privateImage("photo7.jpg")}
+              alt={p.photo7_text ?? ""}
+              className="photo-img"
+              loading="lazy"
+            />
+            <span className="photo-card-badge photo-card-badge-featured">★</span>
+          </div>
           <div className="photo-caption-featured">
             {p.photo7_text && <p className="featured-quote">{p.photo7_text}</p>}
             {p.photo7_sub && <p className="featured-sub">{p.photo7_sub}</p>}
           </div>
-        </div>
+        </article>
       </div>
 
       <div className="album-divider">
@@ -81,32 +130,60 @@ export default function Photos({ t, lang }: Props) {
 
       <div className="photo-grid album-grid">
         {albumPhotos.map((ph, i) => (
-          <div key={`a-${i}`} className="photo-card glass">
-            <img
-              src={ph.src}
-              alt=""
-              className="photo-img"
+          <article key={`a-${i}`} className="photo-card glass">
+            <div
+              className="photo-card-media"
               onClick={() => setLightbox(ph.src)}
-              style={{ cursor: "pointer" }}
-            />
-            <div className="album-caption-block">
-              {ph.title && <span className="album-caption-title">{ph.title}</span>}
-              <p className="album-caption-text">{ph.text}</p>
+              role="button"
+              tabIndex={0}
+              onKeyDown={(e) => {
+                if (e.key === "Enter" || e.key === " ") {
+                  e.preventDefault();
+                  setLightbox(ph.src);
+                }
+              }}
+            >
+              <img src={ph.src} alt={ph.title ?? ""} className="photo-img" loading="lazy" />
+              <span className="photo-card-badge">{pad2(i + 1)}</span>
+              {ph.title && (
+                <div className="photo-card-overlay">
+                  <p className="photo-card-overlay-title">{ph.title}</p>
+                </div>
+              )}
             </div>
-          </div>
+            {ph.text && (
+              <div className="album-caption-block">
+                <p className="album-caption-text">{ph.text}</p>
+              </div>
+            )}
+          </article>
         ))}
       </div>
 
       {lightbox && (
-        <div className="lightbox-overlay" onClick={() => setLightbox(null)}>
+        <div
+          className="lightbox-overlay"
+          role="dialog"
+          aria-modal="true"
+          onClick={() => setLightbox(null)}
+        >
           <button
+            ref={lightboxCloseRef}
             className="lightbox-close"
-            onClick={(e) => { e.stopPropagation(); setLightbox(null); }}
+            onClick={(e) => {
+              e.stopPropagation();
+              setLightbox(null);
+            }}
             aria-label="Close"
           >
             &times;
           </button>
-          <img src={lightbox} alt="" className="lightbox-img" onClick={(e) => e.stopPropagation()} />
+          <img
+            src={lightbox}
+            alt=""
+            className="lightbox-img"
+            onClick={(e) => e.stopPropagation()}
+          />
         </div>
       )}
 
