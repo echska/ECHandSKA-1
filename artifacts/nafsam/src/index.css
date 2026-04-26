@@ -3158,3 +3158,105 @@ a,button,.btn,.links a{
     transition:none!important;
   }
 }
+
+/* ============================================================
+   8PT GRID NORMALIZATION — uniform spacing rhythm
+   All paddings/margins/gaps snap to multiples of 8 (with 4 as
+   half-step only for tight inline elements like pills/badges).
+   ============================================================ */
+
+:root{
+  --s-1:8px;
+  --s-2:16px;
+  --s-3:24px;
+  --s-4:32px;
+  --s-5:40px;
+  --s-6:48px;
+  --s-8:64px;
+  --s-10:80px;
+  --s-12:96px;
+}
+
+/* ---------- Page shell ---------- */
+.page-content{padding-bottom:var(--s-6)}
+
+.page-header{padding:var(--s-6) var(--s-3) var(--s-2)}
+.page-header h1{margin:0 0 var(--s-1)}
+.page-header p{margin:var(--s-1) auto 0;max-width:640px}
+
+/* ---------- Hero ---------- */
+.hero-body{padding:var(--s-5) var(--s-3)}
+.eyebrow{margin-bottom:var(--s-2)}
+.hero-title{margin-bottom:var(--s-2)}
+.typed{margin-bottom:var(--s-2)}
+.hero-text{margin-bottom:var(--s-3)}
+.quote-rotator{margin-bottom:var(--s-3)}
+.elapsed-counter{margin-bottom:var(--s-3);gap:var(--s-2)}
+.hero-buttons{gap:var(--s-2)}
+
+/* ---------- Sections ---------- */
+.cards-section{padding:var(--s-8) var(--s-3)}
+.cards-grid{gap:var(--s-3)}
+.cards-grid .card{padding:var(--s-3)}
+.cards-grid .card h3{margin-bottom:var(--s-1)}
+
+/* ---------- Timeline ---------- */
+.timeline{padding:var(--s-3)}
+.timeline-card{padding:var(--s-3)}
+.timeline-card h3{margin-bottom:var(--s-1)}
+.timeline-card p{margin-bottom:var(--s-1)}
+
+/* ---------- Buttons ---------- */
+.btn{padding:0 var(--s-3);min-height:48px}
+
+/* ---------- Photos luxe ---------- */
+.photos-luxe .photo-grid{gap:var(--s-2);padding:var(--s-3)}
+.photos-luxe .photo-card-overlay{padding:var(--s-2)}
+.photos-luxe .album-caption{padding:var(--s-2)}
+.photos-luxe .photo-card-badge{padding:4px var(--s-1)}
+.photos-luxe .lightbox-content{padding:var(--s-3);gap:var(--s-2)}
+.photos-luxe .lightbox-info{padding:var(--s-2) 0 0}
+.photos-luxe .lightbox-actions{gap:var(--s-1);margin-top:var(--s-2)}
+
+/* ---------- Videos luxe ---------- */
+.videos-luxe .v-gallery{gap:var(--s-3);padding:var(--s-3)}
+.videos-luxe .v-card-info,
+.videos-luxe .v-card-footer{padding:var(--s-2)}
+.videos-luxe .v-card-title{margin-bottom:4px}
+.videos-luxe .v-modal{padding:var(--s-3)}
+.videos-luxe .v-modal-box{padding:var(--s-3);gap:var(--s-2)}
+.videos-luxe .v-modal-info{padding:var(--s-2) 0 0}
+.videos-luxe .v-modal-actions{gap:var(--s-1);margin-top:var(--s-2)}
+.videos-luxe .v-duration{padding:4px var(--s-1)}
+
+/* ---------- Footer ---------- */
+footer,.footer{padding:var(--s-4) var(--s-3)}
+
+/* ---------- Mobile (≤768px) — tighter rhythm, still 8pt ---------- */
+@media (max-width:768px){
+  :root{
+    --s-3:16px;
+    --s-4:24px;
+    --s-5:32px;
+    --s-6:32px;
+    --s-8:40px;
+  }
+  .page-header{padding:var(--s-4) var(--s-2) var(--s-1)}
+  .hero-body{padding:var(--s-12) var(--s-2) var(--s-5)}
+  .cards-section{padding:var(--s-5) var(--s-2)}
+  .cards-grid{gap:var(--s-2)}
+  .cards-grid .card{padding:var(--s-2)}
+  .timeline{padding:var(--s-2)}
+  .timeline-card{padding:var(--s-2)}
+  .btn{padding:0 var(--s-2);min-height:44px}
+  .photos-luxe .photo-grid{gap:var(--s-2);padding:var(--s-2)}
+  .photos-luxe .photo-card-overlay{padding:var(--s-2)}
+  .photos-luxe .lightbox-content{padding:var(--s-2)}
+  .videos-luxe .v-gallery{gap:var(--s-2);padding:var(--s-2)}
+  .videos-luxe .v-modal{padding:var(--s-2)}
+  .videos-luxe .v-modal-box{padding:var(--s-2)}
+  .videos-luxe .v-card-info,
+  .videos-luxe .v-card-footer{padding:var(--s-2)}
+  .hero-buttons{gap:var(--s-2)}
+  footer,.footer{padding:var(--s-3) var(--s-2)}
+}
