@@ -2268,32 +2268,76 @@ audio,video{filter:saturate(.95)}
   .page-header h1{font-size:1.55rem;line-height:1.25}
   .page-header p{font-size:.92rem;line-height:1.6;max-width:92%;margin:8px auto 0}
 
-  /* ----- Navbar — keep inside viewport, scroll if needed ----- */
-  nav,.nav-top{
+  /* ----- Navbar — tidy, consistent, centered pills with edge-fade ----- */
+  .nav,nav.nav,nav{
     width:100%;
     max-width:100%;
     box-sizing:border-box;
+    padding:10px 0 12px;
+    gap:10px;
+    border-radius:0 0 18px 18px;
+    background:linear-gradient(180deg, rgba(11,16,32,.92), rgba(11,16,32,.78));
+    backdrop-filter:blur(14px);
+    -webkit-backdrop-filter:blur(14px);
+    border-bottom:1px solid var(--lux-border-soft);
   }
+  .nav-top{
+    width:100%;
+    justify-content:center;
+    padding:2px 16px 0;
+  }
+  .brand{font-size:1.1rem;letter-spacing:.06em}
+
+  /* Centered pill row that scrolls if it overflows, with soft edge fade */
   .links{
+    position:relative;
+    display:flex;
     flex-wrap:nowrap;
     overflow-x:auto;
+    overflow-y:hidden;
     -webkit-overflow-scrolling:touch;
     scrollbar-width:none;
-    justify-content:flex-start;
-    padding:6px 12px;
+    justify-content:center;
+    align-items:center;
     gap:6px;
+    padding:4px 18px;
+    width:100%;
+    max-width:100%;
+    box-sizing:border-box;
+    /* fade at left/right edges so scroll feels intentional */
+    -webkit-mask-image:linear-gradient(90deg, transparent 0, #000 18px, #000 calc(100% - 18px), transparent 100%);
+            mask-image:linear-gradient(90deg, transparent 0, #000 18px, #000 calc(100% - 18px), transparent 100%);
   }
   .links::-webkit-scrollbar{display:none}
+  /* When content overflows, justify-content:center is ignored automatically;
+     keep items packed at the start of the scroll area */
+  .links > *{flex:0 0 auto}
   .links a{
-    flex:0 0 auto;
-    font-size:.78rem;
-    padding:6px 12px;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    height:34px;
+    padding:0 14px;
+    border-radius:999px;
+    font-size:.8rem;
+    font-weight:500;
+    line-height:1;
     white-space:nowrap;
+    color:var(--lux-text-dim);
+    background:rgba(255,255,255,.02);
+    border:1px solid var(--lux-border-soft);
+    transition:background .25s ease, color .25s ease, border-color .25s ease, box-shadow .25s ease;
+  }
+  .links a:hover{
+    color:var(--lux-amber);
+    border-color:var(--lux-border);
+    background:rgba(216,165,124,.06);
   }
   .links a.active{
-    color:#d8a57c;
-    border-color:rgba(216,165,124,.45);
-    background:rgba(216,165,124,.08);
+    color:#1a1208;
+    background:linear-gradient(180deg, var(--lux-rose) 0%, #c89066 100%);
+    border-color:var(--lux-rose-bright);
+    box-shadow:0 6px 18px rgba(216,165,124,.28);
   }
 
   /* ----- Hero ----- */
