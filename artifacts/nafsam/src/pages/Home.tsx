@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link } from "wouter";
 import { type Translations, type Lang } from "@/i18n/translations";
-import TypedText from "@/components/TypedText";
 import TypewriterTitle from "@/components/TypewriterTitle";
 import FarewellPassage from "@/components/FarewellPassage";
 import OblivionScript from "@/components/OblivionScript";
@@ -31,20 +30,7 @@ export default function Home({ t, lang }: Props) {
   const data = usePrivateContent();
   const p = pickLangPages(data, lang);
 
-  const quotes = [p.quote_1, p.quote_2, p.quote_3, p.quote_4].filter(
-    (q): q is string => !!q,
-  );
-  const typedPhrases = [t.typed_1, t.typed_2, t.typed_3, t.typed_4];
-  const [quoteIdx, setQuoteIdx] = useState(0);
   const [el, setEl] = useState(elapsed(new Date()));
-
-  useEffect(() => {
-    if (quotes.length === 0) return;
-    const interval = setInterval(() => {
-      setQuoteIdx((i) => (i + 1) % quotes.length);
-    }, 3500);
-    return () => clearInterval(interval);
-  }, [quotes.length]);
 
   useEffect(() => {
     const interval = setInterval(() => setEl(elapsed(new Date())), 1000);
@@ -79,19 +65,14 @@ export default function Home({ t, lang }: Props) {
           <span className="eyebrow">{t.hero_eyebrow}</span>
           <TypewriterTitle text={t.hero_title} />
 
-          {lang === "ar" ? (
-            <FarewellPassage />
-          ) : (
-            <>
-              <TypedText phrases={typedPhrases} />
-              {p.hero_text && <p className="hero-text">{p.hero_text}</p>}
-              {quotes.length > 0 && (
-                <div className="quote-rotator" key={quoteIdx}>
-                  <q>{quotes[quoteIdx]}</q>
-                </div>
-              )}
-            </>
-          )}
+          <FarewellPassage
+            title={t.farewell_title}
+            paragraphs={[t.farewell_p1, t.farewell_p2, t.farewell_p3, t.farewell_p4]}
+            silverAnchor={t.farewell_silver_anchor}
+            memoryPattern={t.farewell_memory_pattern}
+            dir={t.dir}
+            lang={lang}
+          />
           <div className="elapsed-counter">
             <span>{el.days} {t.countdown_day}</span>
             <span>{el.hrs} {t.countdown_hour}</span>
@@ -109,7 +90,13 @@ export default function Home({ t, lang }: Props) {
         </div>
       </section>
 
-      {lang === "ar" && <OblivionScript />}
+      <OblivionScript
+        name={t.oblivion_name}
+        hint={t.oblivion_hint}
+        revealed={t.oblivion_revealed}
+        dir={t.dir}
+        lang={lang}
+      />
 
       <section className="cards-section">
         <div className="cards-grid">
