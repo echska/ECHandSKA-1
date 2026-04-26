@@ -1,7 +1,9 @@
+import { useEffect, useRef } from "react";
 import { type Translations, type Lang } from "@/i18n/translations";
 import Footer from "@/components/Footer";
 import { usePrivateContent, pickLangPages } from "@/hooks/usePrivateContent";
 import RevealCard from "@/components/RevealCard";
+import { PAGE_AUDIO_PAUSE_EVENT, PAGE_AUDIO_RESUME_EVENT } from "@/hooks/usePageAudio";
 
 interface Props {
   t: Translations;
@@ -11,6 +13,65 @@ interface Props {
 export default function Songs({ t, lang }: Props) {
   const data = usePrivateContent();
   const p = pickLangPages(data, lang);
+  const listRef = useRef<HTMLDivElement | null>(null);
+
+  useEffect(() => {
+    const root = listRef.current;
+    if (!root) return;
+
+    let activeAudio: HTMLAudioElement | null = null;
+    let anyPlaying = false;
+
+    const updateGlobalState = () => {
+      const allAudios = root.querySelectorAll<HTMLAudioElement>("audio.audio-player");
+      const playing = Array.from(allAudios).some((a) => !a.paused && !a.ended);
+      if (playing && !anyPlaying) {
+        anyPlaying = true;
+        window.dispatchEvent(new Event(PAGE_AUDIO_PAUSE_EVENT));
+      } else if (!playing && anyPlaying) {
+        anyPlaying = false;
+        window.dispatchEvent(new Event(PAGE_AUDIO_RESUME_EVENT));
+      }
+    };
+
+    const onPlay = (e: Event) => {
+      const target = e.target as HTMLElement | null;
+      if (!target || !(target instanceof HTMLAudioElement)) return;
+      if (!target.classList.contains("audio-player")) return;
+
+      const allAudios = root.querySelectorAll<HTMLAudioElement>("audio.audio-player");
+      allAudios.forEach((a) => {
+        if (a !== target && !a.paused) {
+          a.pause();
+        }
+      });
+      activeAudio = target;
+      updateGlobalState();
+    };
+
+    const onPauseOrEnd = (e: Event) => {
+      const target = e.target as HTMLElement | null;
+      if (!target || !(target instanceof HTMLAudioElement)) return;
+      if (!target.classList.contains("audio-player")) return;
+      window.setTimeout(updateGlobalState, 50);
+    };
+
+    root.addEventListener("play", onPlay, true);
+    root.addEventListener("pause", onPauseOrEnd, true);
+    root.addEventListener("ended", onPauseOrEnd, true);
+
+    return () => {
+      root.removeEventListener("play", onPlay, true);
+      root.removeEventListener("pause", onPauseOrEnd, true);
+      root.removeEventListener("ended", onPauseOrEnd, true);
+      if (activeAudio && !activeAudio.paused) {
+        activeAudio.pause();
+      }
+      if (anyPlaying) {
+        window.dispatchEvent(new Event(PAGE_AUDIO_RESUME_EVENT));
+      }
+    };
+  }, []);
 
   const songs = [
     { title: "Be Koja Residi — Dorcci", text: p.song1_text, src: "/api/private/media/song1.mp3" },
@@ -40,7 +101,7 @@ export default function Songs({ t, lang }: Props) {
         <p>{t.songs_text}</p>
       </div>
 
-      <div className="songs-list">
+      <div className="songs-list" ref={listRef}>
         {songs.map((s, i) => (
           <RevealCard key={i} className="song-card glass" index={i}>
             <h3>{s.title}</h3>
