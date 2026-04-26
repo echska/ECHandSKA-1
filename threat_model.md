@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This project is a pnpm-workspace TypeScript monorepo for a personal memory archive called Nafsam. Production consists of a React + Vite frontend in `artifacts/nafsam` and an Express 5 server in `artifacts/api-server` that serves `/api` and, in the API deployment, the built frontend assets. The application appears intended to present private or semi-private personal photos, videos, writings, and related text content behind a riddle-style login experience.
+This project is a pnpm-workspace TypeScript monorepo for a personal memory archive called Nafsam. Production consists of a React + Vite frontend in `artifacts/nafsam` and an Express 5 API in `artifacts/api-server`. The site presents a public landing/login experience and is intended to restrict the underlying memories, media, and writings to authorized viewers.
 
 Production assumptions for future scans:
 - `NODE_ENV` is `production` in deployed environments.
@@ -11,40 +11,40 @@ Production assumptions for future scans:
 
 ## Assets
 
-- **Private memory content** -- personal photos, videos, writings, captions, and other intimate media under `artifacts/nafsam/public/`. Exposure would disclose sensitive personal content to unauthorized viewers.
-- **Access-control secrets and session state** -- any riddle answers, future passwords, cookies, or session markers that gate access to private pages or media. Compromise would let attackers impersonate authorized viewers.
-- **Application and infrastructure secrets** -- environment variables such as `DATABASE_URL`, any future API keys, and deployment configuration. Exposure would allow backend or data-store compromise.
-- **Integrity of presented content** -- the app’s text, captions, and media sequencing. Client-controlled state must not be treated as proof of authorization for protected content.
+- **Private memory content** -- photos, videos, audio, writings, captions, quotes, and related metadata associated with the archive. Exposure would disclose intimate personal material to unauthorized viewers.
+- **Authentication material and session state** -- accepted riddle answers, session cookies, and the session-signing secret. Compromise would allow unauthorized access to the protected archive.
+- **Application and deployment secrets** -- environment variables such as `NAFSAM_SESSION_SECRET`, `DATABASE_URL`, and any future third-party API credentials.
+- **Archive privacy expectations** -- the expectation that “protected” pages and media are only available after successful server-side authorization, not merely hidden by the UI.
 
 ## Trust Boundaries
 
-- **Browser to server boundary** -- all frontend route access, static asset fetches, and `/api` requests cross from an untrusted browser into deployed services. The client must be treated as fully attacker-controlled.
-- **Public to intended-private content boundary** -- the app distinguishes a login page from private pages such as `/home`, `/photos`, `/videos`, `/moments`, `/songs`, `/writings`, and `/stats`. This boundary only matters if it is enforced server-side, including for underlying media files.
-- **Server to database boundary** -- `lib/db` provisions a PostgreSQL client via `DATABASE_URL`. Even if currently unused by routes, future API handlers on this boundary must assume database access is highly privileged.
+- **Browser to frontend bundle boundary** -- every visitor can download and inspect the public web bundle. Any sensitive text, media inventory, or gatekeeping material shipped in client assets should be treated as public.
+- **Browser to API boundary** -- `/api/auth/*` and `/api/private/*` requests cross from an untrusted client into trusted backend code. All authentication and authorization decisions must be enforced server-side.
+- **API to private filesystem boundary** -- `artifacts/api-server/private/` stores protected media and `content.json`. File-serving code on this boundary must prevent path traversal, cache leakage, and unauthenticated access.
 - **Production to dev-only boundary** -- `artifacts/mockup-sandbox`, `scripts/`, and codegen/spec tooling are not production surfaces unless explicitly wired into deployment.
 
 ## Scan Anchors
 
-- **Production entry points**: `artifacts/api-server/src/index.ts`, `artifacts/api-server/src/app.ts`, `artifacts/nafsam/src/App.tsx`
-- **Highest-risk code areas**: `artifacts/nafsam/src/pages/Login.tsx`, `artifacts/nafsam/src/App.tsx`, `artifacts/nafsam/src/pages/Photos.tsx`, `artifacts/nafsam/src/pages/Videos.tsx`, `artifacts/nafsam/public/`, `artifacts/api-server/src/routes/`
-- **Public surfaces**: `/api/healthz`, static assets under the deployed frontend build, and any direct file paths under `/images`, `/media`, or similar public directories
-- **Intended authenticated surfaces**: frontend routes gated by the app’s login flow (`/home`, `/moments`, `/photos`, `/songs`, `/videos`, `/writings`, `/stats`)
+- **Production entry points**: `artifacts/api-server/src/index.ts`, `artifacts/api-server/src/app.ts`, `artifacts/api-server/src/routes/auth.ts`, `artifacts/api-server/src/routes/private.ts`, `artifacts/nafsam/src/App.tsx`
+- **Highest-risk code areas**: `artifacts/api-server/src/routes/auth.ts`, `artifacts/api-server/src/lib/session.ts`, `artifacts/api-server/src/routes/private.ts`, `artifacts/nafsam/src/pages/Login.tsx`, `artifacts/nafsam/src/i18n/translations.ts`, `artifacts/nafsam/src/data/videosData.ts`, `artifacts/nafsam/src/data/allPhotos.ts`
+- **Public surfaces**: the frontend bundle and static assets under `artifacts/nafsam/dist/public`, `/api/healthz`, and `/api/auth/*`
+- **Intended authenticated surfaces**: `/api/private/*` and frontend routes such as `/home`, `/moments`, `/photos`, `/songs`, `/videos`, and `/writings`
 - **Dev-only areas to usually ignore**: `artifacts/mockup-sandbox/`, `scripts/`, `lib/api-spec/`
 
 ## Threat Categories
 
 ### Spoofing
 
-If the site is meant to restrict access to private memories, the server must authenticate viewers with a secret that is not shipped to the browser and must validate that proof on every protected request. Client-side markers such as `localStorage` flags, route guards, or hardcoded answers do not establish identity because any visitor can modify browser state and inspect bundled code.
+The server must fail closed if production authentication configuration is incomplete. Accepted login answers must come from deployment configuration rather than hardcoded fallbacks, and the application must not expose exact accepted answers or materially equivalent hints to unauthenticated visitors. Session cookies must remain signed with a production-only secret and validated on every protected request.
 
 ### Tampering
 
-The client is untrusted and can freely alter route state, local storage, DOM state, and request parameters. Any decision about whether a viewer may see restricted content or fetch restricted files must be enforced by server-side checks, not by frontend-only logic or by hiding links in the UI.
+The browser is untrusted and can alter route state, requests, and asset URLs. Authorization decisions for protected memories must remain on the server, and file-serving code must continue to canonicalize user-influenced paths before reading from the private filesystem.
 
 ### Information Disclosure
 
-Private media, writings, and captions must not be exposed as publicly retrievable static assets if they are intended to be access-controlled. The application must avoid embedding sensitive answers or other gatekeeping secrets in shipped JavaScript, and API responses or logs must not disclose secrets or personal data beyond what an authorized viewer needs.
+Protected memories must not be exposed through public frontend bundles, logs, error responses, or cache policy. Sensitive text, media inventories, and intimate captions should only be delivered after successful authorization, and private media responses should not remain retrievable from browser cache after logout or session expiry if the archive is intended to stay private on shared devices.
 
 ### Elevation of Privilege
 
-A visitor must not be able to promote themselves from unauthenticated to authenticated simply by changing client-side state, directly requesting asset URLs, or navigating to hidden routes. Any future backend endpoints that expose user or memory data must enforce authorization server-side and must not rely on the frontend to pre-filter access.
+A visitor must not be able to promote themselves from unauthenticated to authenticated by exploiting insecure defaults, client-side route guards, or predictable asset URLs. Any future backend endpoints that expose archive data must enforce authorization server-side and must not rely on the frontend to pre-filter access.
