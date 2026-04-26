@@ -3,6 +3,7 @@ import { Switch, Route, Router as WouterRouter, useLocation, Redirect } from "wo
 import { useLang } from "@/hooks/useLang";
 import Rain from "@/components/Rain";
 import FloatingHearts from "@/components/FloatingHearts";
+import DustParticles from "@/components/DustParticles";
 import { useMagneticButtons } from "@/hooks/useMagneticButtons";
 import Navbar from "@/components/Navbar";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
@@ -68,6 +69,7 @@ function AppContent() {
     <div className="app-shell">
       <Rain />
       <FloatingHearts />
+      <DustParticles />
       {authState === "authed" && <Navbar t={t} />}
       <LanguageSwitcher lang={lang} setLang={setLang} mini />
       <main>
