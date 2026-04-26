@@ -18,14 +18,19 @@
   --sans:'Cairo','Inter',sans-serif;
   --ease:cubic-bezier(0.4, 0, 0.2, 1);
   --ease-out:cubic-bezier(0.2, 0.8, 0.2, 1);
+  /* Luxury cinematic blueprint */
+  --bg-deep:#050814;
+  --rose-gold:#d8a57c;
+  --glass:rgba(21,23,43,0.7);
+  --text-main:#f7efe7;
 }
 
 html{scroll-behavior:smooth}
 
 html,body{
-  font-family:var(--sans);
-  background:#06060a;
-  color:var(--text);
+  font-family:'Tajawal','Cairo','Inter',sans-serif;
+  background:radial-gradient(circle at top, #0b1020 0%, var(--bg-deep) 100%);
+  color:var(--text-main);
   min-height:100vh;
   overflow-x:hidden;
   scroll-behavior:smooth;
@@ -3395,4 +3400,66 @@ footer,.footer{padding:var(--s-4) var(--s-3)}
   .lux-img-placeholder{display:none}
   .reveal{opacity:1;transform:none;transition:none}
   .photos-luxe .photo-card{opacity:1;transform:none;transition:none}
+}
+
+/* ============================================================
+   LUXURY CINEMATIC BLUEPRINT
+   Card luxury class + media gradient overlay.
+   Applied additively to existing card components.
+   ============================================================ */
+.card-luxury,
+.photos-luxe .photo-card,
+.videos-luxe .v-card,
+.song-card,
+.timeline-card,
+.cards-grid > .card{
+  background:var(--glass);
+  backdrop-filter:blur(15px);
+  -webkit-backdrop-filter:blur(15px);
+  border:0.5px solid rgba(216, 165, 124, 0.2);
+  border-radius:24px;
+  transition:all 0.5s var(--ease);
+  overflow:hidden;
+}
+
+.card-luxury:hover,
+.videos-luxe .v-card:hover,
+.song-card:hover,
+.timeline-card:hover,
+.cards-grid > .card:hover{
+  transform:translateY(-10px) scale(1.02);
+  border-color:var(--rose-gold);
+  box-shadow:
+    0 20px 40px rgba(0,0,0,0.6),
+    0 0 20px rgba(216, 165, 124, 0.1);
+}
+
+/* Photo cards already have a finer hover (translateY -4px scale 1.01) — keep
+   their tuned behavior, but adopt the luxury rose-gold border+glow on hover. */
+.photos-luxe .photo-card:hover{
+  border-color:var(--rose-gold);
+  box-shadow:
+    0 26px 60px -22px rgba(0,0,0,.8),
+    0 0 0 1px rgba(216,165,124,.25),
+    0 0 30px rgba(216,165,124,.10);
+}
+
+/* Cinematic gradient overlay on media (images, videos, posters) */
+.media-overlay,
+.photos-luxe .photo-card-overlay,
+.videos-luxe .v-card-overlay{
+  background:linear-gradient(to bottom,
+    transparent 50%,
+    rgba(5, 8, 20, 0.9) 100%);
+}
+
+/* Reduced motion: no card lift */
+@media (prefers-reduced-motion: reduce){
+  .card-luxury:hover,
+  .videos-luxe .v-card:hover,
+  .song-card:hover,
+  .timeline-card:hover,
+  .cards-grid > .card:hover{
+    transform:none;
+  }
 }
