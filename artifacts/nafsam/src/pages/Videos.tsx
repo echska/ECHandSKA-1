@@ -10,19 +10,15 @@ function buildSrc(file: string) {
   return `/api/private/media/${encodeURIComponent(file)}`;
 }
 
-function buildPoster(file: string) {
-  const base = file.replace(/\.[^/.]+$/, "");
-  return `/api/private/posters/${encodeURIComponent(base)}.jpg`;
-}
-
 function Thumb({ file }: { file: string }) {
   return (
     <div className="v-thumb">
-      <img
-        src={buildPoster(file)}
-        alt=""
-        loading="lazy"
-        decoding="async"
+      <video
+        src={`${buildSrc(file)}#t=0.1`}
+        preload="metadata"
+        muted
+        playsInline
+        disablePictureInPicture
         draggable={false}
       />
       <div className="v-play">▶</div>
