@@ -13,6 +13,11 @@ function getSecret(): string {
   return "dev-only-insecure-session-secret-change-me";
 }
 
+function getPasswordVersion(): string {
+  const raw = process.env.NAFSAM_PASSWORDS ?? "";
+  return crypto.createHash("sha256").update(raw).digest("base64url").slice(0, 16);
+}
+
 function sign(payload: string): string {
   const h = crypto.createHmac("sha256", getSecret()).update(payload).digest("base64url");
   return `${payload}.${h}`;
@@ -20,16 +25,24 @@ function sign(payload: string): string {
 
 function verify(token: string | undefined): { valid: boolean; expiresAt?: number } {
   if (!token) return { valid: false };
-  const parts = token.split(".");
-  if (parts.length !== 2) return { valid: false };
-  const [payload, sig] = parts;
+  const dotIndex = token.lastIndexOf(".");
+  if (dotIndex === -1) return { valid: false };
+  const payload = token.slice(0, dotIndex);
+  const sig = token.slice(dotIndex + 1);
   const expected = crypto.createHmac("sha256", getSecret()).update(payload).digest("base64url");
   const a = Buffer.from(sig);
   const b = Buffer.from(expected);
   if (a.length !== b.length || !crypto.timingSafeEqual(a, b)) {
     return { valid: false };
   }
-  const expiresAt = Number(payload);
+  const colonIndex = payload.indexOf(":");
+  if (colonIndex === -1) return { valid: false };
+  const expiresAtStr = payload.slice(0, colonIndex);
+  const embeddedVersion = payload.slice(colonIndex + 1);
+  if (embeddedVersion !== getPasswordVersion()) {
+    return { valid: false };
+  }
+  const expiresAt = Number(expiresAtStr);
   if (!Number.isFinite(expiresAt) || expiresAt < Date.now()) {
     return { valid: false };
   }
@@ -38,7 +51,8 @@ function verify(token: string | undefined): { valid: boolean; expiresAt?: number
 
 export function issueSession(res: Response): void {
   const expiresAt = Date.now() + SESSION_TTL_MS;
-  const token = sign(String(expiresAt));
+  const payload = `${String(expiresAt)}:${getPasswordVersion()}`;
+  const token = sign(payload);
   res.cookie(COOKIE_NAME, token, {
     httpOnly: true,
     sameSite: "lax",
