@@ -13,7 +13,7 @@ paths = ["/api"]
 run = "pnpm --filter @workspace/api-server run dev"
 
 [services.production]
-build = ["sh", "-c", "pnpm install && pnpm --filter @workspace/nafsam run build && pnpm --filter @workspace/api-server run build"]
+build = ["sh", "-c", "npm install -g pnpm@9.15.9 && pnpm install && pnpm --filter @workspace/nafsam run build && pnpm --filter @workspace/api-server run build"]
 run = ["pnpm", "--filter", "@workspace/api-server", "run", "start"]
 
 [services.env]
