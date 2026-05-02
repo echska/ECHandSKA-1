@@ -1,3 +1,5 @@
-export default function handler(req, res) {
+import { VercelRequest, VercelResponse } from "@vercel/node";
+
+export default function handler(req: VercelRequest, res: VercelResponse) {
   res.status(200).send("API is working!");
 }
